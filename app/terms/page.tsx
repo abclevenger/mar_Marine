@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { PageShell } from "../siteContent";
 
 export const metadata: Metadata = {
-  title: "Terms and Conditions | MAR-MARINA",
-  description: "Terms and conditions of use for MAR-MARINA website and services.",
+  title: "Terms and Conditions | Mar Marina",
+  description: "Terms and conditions of use for Mar Marina website and services.",
   alternates: { canonical: "/terms" },
 };
 
@@ -16,7 +16,7 @@ export default function TermsPage() {
         <section>
           <h2>Acceptance of Terms</h2>
           <p>
-            By accessing or using the MAR-MARINA website and services, you agree to these Terms and Conditions. If you do not agree, please do not use our site or services.
+            By accessing or using the Mar Marina website and services, you agree to these Terms and Conditions. If you do not agree, please do not use our site or services.
           </p>
         </section>
         <section>
@@ -34,13 +34,13 @@ export default function TermsPage() {
         <section>
           <h2>Intellectual Property</h2>
           <p>
-            Content on this website, including text, images, and logos, is owned by MAR-MARINA or its licensors and may not be copied or used without permission.
+            Content on this website, including text, images, and logos, is owned by Mar Marina or its licensors and may not be copied or used without permission.
           </p>
         </section>
         <section>
           <h2>Limitation of Liability</h2>
           <p>
-            MAR-MARINA is not liable for indirect, incidental, or consequential damages arising from your use of this website or our services, to the extent permitted by law.
+            Mar Marina is not liable for indirect, incidental, or consequential damages arising from your use of this website or our services, to the extent permitted by law.
           </p>
         </section>
         <section>

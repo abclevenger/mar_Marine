@@ -15,7 +15,7 @@ const SERVICE_CARDS: ServiceCard[] = [
     description:
       "Troubleshoot and complete mechanical and systems work with one local marine team handling scheduling and follow-through.",
     href: "/services/boat-repair-tarpon-springs",
-    ctaLabel: "Request an Estimate",
+    ctaLabel: "Get a Quote",
   },
   {
     label: "Storage",
@@ -31,7 +31,7 @@ const SERVICE_CARDS: ServiceCard[] = [
     description:
       "Keep your vessel ready with coordinated service windows for routine upkeep, inspections, and preventative care.",
     href: "/services/marine-maintenance-tarpon-springs",
-    ctaLabel: "Schedule Inspection",
+    ctaLabel: "Get a Quote",
   },
   {
     label: "Finish Work",
@@ -55,7 +55,7 @@ const SERVICE_CARDS: ServiceCard[] = [
     description:
       "Share your boat details and timeline to get clear next steps, fit confirmation, and a straightforward estimate path.",
     href: "/contact.html#quote",
-    ctaLabel: "Get a Fast Quote",
+    ctaLabel: "Get a Quote",
   },
 ];
 

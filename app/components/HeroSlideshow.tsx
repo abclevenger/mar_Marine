@@ -11,33 +11,33 @@ type Slide = {
 const SLIDES: Slide[] = [
   {
     image: "/img/first.jpg",
-    heading: "MAR-MARINA WET SLIPS AND DRY STORAGE",
-    subheading: "Amazing Location - Amazing service",
+    heading: "Mar Marina Wet Slips and Dry Storage",
+    subheading: "Protected location with trusted marine service",
   },
   {
     image: "/img/second.jpg",
-    heading: "BEST HOME FOR YOUR VESSEL LARGE or SMALL",
-    subheading: "Easy Access to Open Water and Safety from Storms",
+    heading: "A Reliable Home for Your Vessel",
+    subheading: "Easy access to open water and protected marina positioning",
   },
   {
     image: "/img/third.jpg",
-    heading: "Slip Into Tarpon spring's Beautiful ANCLOTE RIVER",
-    subheading: "MAR-MARINA",
+    heading: "Slip Into Tarpon Springs on the Anclote River",
+    subheading: "Mar Marina",
   },
   {
     image: "/img/fourth.jpg",
-    heading: "Welcome Aboard!",
-    subheading: "MAR-MARINA",
+    heading: "Welcome Aboard",
+    subheading: "Mar Marina",
   },
   {
     image: "/img/fifth.jpg",
-    heading: "You are here to stay!",
-    subheading: "MAR-MARINA",
+    heading: "Service, Storage, and Support in One Location",
+    subheading: "Mar Marina",
   },
   {
     image: "/img/seventh.jpg",
-    heading: "You are here to stay!",
-    subheading: "MAR-MARINA",
+    heading: "Built for Repeat Marine Service",
+    subheading: "Mar Marina",
   },
   {
     image: "/img/eighth.jpg",

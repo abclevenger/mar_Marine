@@ -7,16 +7,15 @@ export function QuoteRequestSection() {
       <div className="line home-quote-grid-layout">
         <div className="home-quote-copy">
           <h2 id="quote-section-heading" className="home-heading">
-            Request a Fast Quote
+            Get a Quote
           </h2>
           <p className="home-quote-lead">
             Tell us what your boat needs and we&apos;ll get back to you quickly with practical next
             steps for repair, storage, maintenance, or inspection scheduling.
           </p>
-          {/* TODO: Add real response-time SLA once operations team confirms. */}
           <p className="home-quote-lead">Typical requests are reviewed during business hours.</p>
           <address className="home-quote-nap">
-            <strong>MAR-MARINA</strong>
+            <strong>Mar Marina</strong>
             <br />
             {NAP.street}
             <br />

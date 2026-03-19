@@ -4,9 +4,9 @@ import { PageShell } from "../../siteContent";
 import { NAP } from "../../lib/business";
 
 export const metadata: Metadata = {
-  title: "Boat Storage Pricing Guide – Tarpon Springs | MAR-MARINA",
+  title: "Boat Storage Pricing Guide – Tarpon Springs | Mar Marina",
   description:
-    "What affects boat storage cost in Tarpon Springs: wet vs dry, size, season, access, and service level. Request a Quote for your boat.",
+    "What affects boat storage cost in Tarpon Springs: wet vs dry, size, season, access, and service level. Get a Quote for your boat.",
   alternates: { canonical: "/guides/boat-storage-pricing-tarpon-springs" },
 };
 
@@ -22,7 +22,7 @@ export default function BoatStoragePricingGuidePage() {
         <section>
           <h2>Wet slip vs dry storage: how it affects cost</h2>
           <p>
-            Wet slips usually have a monthly rate based on length (and sometimes beam). Dry storage may be priced by the day, week, or month, and often by length or a size tier. Rack storage (forklift in-out) can be priced differently from yard storage. At MAR-MARINA we offer daily, weekly, and monthly rates for dry storage; call for current availability and pricing.
+            Wet slips usually have a monthly rate based on length (and sometimes beam). Dry storage may be priced by the day, week, or month, and often by length or a size tier. Rack storage (forklift in-out) can be priced differently from yard storage. At Mar Marina we offer daily, weekly, and monthly rates for dry storage; call for current availability and pricing.
           </p>
         </section>
 
@@ -38,7 +38,7 @@ export default function BoatStoragePricingGuidePage() {
         </section>
 
         <section>
-          <h2>Request a Quote</h2>
+          <h2>Get a Quote</h2>
           <p>
             We do not publish exact prices online because they depend on your boat size, storage type, and term. For current <strong>wet slip</strong> and <strong>dry storage</strong> pricing and availability in Tarpon Springs, call <a href={`tel:${NAP.phoneTel}`}>{NAP.phone}</a> or <a href={`mailto:${NAP.email}`}>email us</a>. We can give you a clear quote for your situation.
           </p>
@@ -46,7 +46,7 @@ export default function BoatStoragePricingGuidePage() {
 
         <p className="guide-cta">
           <Link href="/contact.html" className="quick-action">
-            Request a Quote
+            Get a Quote
           </Link>
         </p>
       </article>

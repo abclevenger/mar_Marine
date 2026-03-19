@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { PageShell } from "../siteContent";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | MAR-MARINA",
-  description: "Privacy policy for MAR-MARINA. How we collect, use, and protect your information.",
+  title: "Privacy Policy | Mar Marina",
+  description: "Privacy policy for Mar Marina. How we collect, use, and protect your information.",
   alternates: { canonical: "/privacy" },
 };
 
@@ -16,7 +16,7 @@ export default function PrivacyPage() {
         <section>
           <h2>Information We Collect</h2>
           <p>
-            MAR-MARINA may collect information you provide when you contact us, use our services, or visit our website. This may include name, email, phone number, and other details you choose to share.
+            Mar Marina may collect information you provide when you contact us, use our services, or visit our website. This may include name, email, phone number, and other details you choose to share.
           </p>
         </section>
         <section>

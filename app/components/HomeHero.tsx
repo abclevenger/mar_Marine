@@ -21,11 +21,11 @@ export function HomeHero() {
             </p>
             <div className="home-hero-cta-row">
               <Link href="/contact.html#quote" className="btn-hero btn-hero-primary">
-                Get a Fast Quote
+                Get a Quote
               </Link>
-              <Link href="/contact.html#quote" className="btn-hero btn-hero-outline">
-                Schedule Inspection
-              </Link>
+              <a href={`tel:${NAP.phoneTel}`} className="btn-hero btn-hero-outline">
+                Call Now
+              </a>
             </div>
             <ul className="home-hero-trust" aria-label="Trust highlights">
               <li>

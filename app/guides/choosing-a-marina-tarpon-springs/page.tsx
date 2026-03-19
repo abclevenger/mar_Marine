@@ -4,7 +4,7 @@ import { PageShell } from "../../siteContent";
 import { NAP, SUMMARY_ONE_LINE } from "../../lib/business";
 
 export const metadata: Metadata = {
-  title: "Choosing a Marina in Tarpon Springs | MAR-MARINA",
+  title: "Choosing a Marina in Tarpon Springs | Mar Marina",
   description:
     "What to compare when choosing a marina: storage type, security, haul-out capability, location, and reputation. A practical framework for Tarpon Springs boat owners.",
   alternates: { canonical: "/guides/choosing-a-marina-tarpon-springs" },
@@ -31,7 +31,7 @@ export default function ChoosingAMarinaTarponSpringsPage() {
         </section>
 
         <section>
-          <h2>MAR-MARINA in Tarpon Springs</h2>
+          <h2>Mar Marina in Tarpon Springs</h2>
           <p>
             {SUMMARY_ONE_LINE} We are at the end of the Anclote River with two 35-ton travel lifts, secure dry and wet storage (including rack storage for boats up to 28&apos;), 24-hour on-site security, and on-site repair and maintenance. We have been serving boat owners for over 30 years. If you are comparing marinas in the area, we invite you to <Link href="/contact.html">contact us</Link> for a quote or to <Link href="/wetslips.html">read what our customers say</Link>.
           </p>
@@ -39,7 +39,7 @@ export default function ChoosingAMarinaTarponSpringsPage() {
 
         <p className="guide-cta">
           <Link href="/contact.html" className="quick-action">
-            Request a Quote
+            Get a Quote
           </Link>
         </p>
       </article>

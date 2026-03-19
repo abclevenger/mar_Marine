@@ -10,11 +10,10 @@ type NavLink = {
 };
 
 const NAV_LINKS: NavLink[] = [
-  { href: "/index.html", label: "Home" },
   { href: "/drystorage.html", label: "Services" },
-  { href: "/wetslips.html", label: "Reviews" },
-  { href: "/boatyardgallery.html", label: "Gallery" },
-  { href: "/#why-choose-us", label: "Why Us" },
+  { href: "/#why-choose-us", label: "Why Choose Us" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/#testimonials", label: "Testimonials" },
   { href: "/contact.html", label: "Contact" },
 ];
 
@@ -29,7 +28,6 @@ export function SiteHeaderNav({ currentPath }: { currentPath: string }) {
   const [scrolled, setScrolled] = useState(false);
   const [activeHomeSection, setActiveHomeSection] = useState<string>("");
   const isHomeRoute = currentPath === "/" || currentPath === "/index.html";
-  const primarySectionLink = "why-choose-us";
 
   useEffect(() => {
     const onScroll = () => {
@@ -125,10 +123,6 @@ export function SiteHeaderNav({ currentPath }: { currentPath: string }) {
   }, [isHomeRoute]);
 
   const isNavItemActive = (href: string): boolean => {
-    if (href === "/index.html" || href === "/") {
-      return isHomeRoute && activeHomeSection !== primarySectionLink;
-    }
-
     if (href.startsWith("/#")) {
       if (!isHomeRoute) return false;
       const id = href.replace("/#", "");
@@ -151,8 +145,8 @@ export function SiteHeaderNav({ currentPath }: { currentPath: string }) {
   return (
     <header className={headerClass}>
       <div className="line top-nav-grid">
-        <Link href="/index.html" className="nav-logo" aria-label="MAR-MARINA Home">
-          <span className="nav-logo-top">MAR-MARINA</span>
+        <Link href="/index.html" className="nav-logo" aria-label="Mar Marina Home">
+          <span className="nav-logo-top">Mar Marina</span>
           <span className="nav-logo-sub">Tarpon Springs · Open to the public</span>
         </Link>
 
@@ -177,7 +171,7 @@ export function SiteHeaderNav({ currentPath }: { currentPath: string }) {
             Call Now
           </a>
           <Link href="/contact.html#quote" className="nav-quote">
-            Get a Fast Quote
+            Get a Quote
           </Link>
         </div>
 
@@ -236,7 +230,7 @@ export function SiteHeaderNav({ currentPath }: { currentPath: string }) {
                 Call Now
               </a>
               <Link href="/contact.html#quote" onClick={() => setMenuOpen(false)}>
-                Get a Fast Quote
+                Get a Quote
               </Link>
             </div>
           </div>

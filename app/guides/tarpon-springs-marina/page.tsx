@@ -4,7 +4,7 @@ import { PageShell } from "../../siteContent";
 import { NAP, SUMMARY_ONE_LINE } from "../../lib/business";
 
 export const metadata: Metadata = {
-  title: "Tarpon Springs Marina Guide | MAR-MARINA",
+  title: "Tarpon Springs Marina Guide | Mar Marina",
   description:
     "A guide to boating and marina options in Tarpon Springs, Florida: docking, storage, haul-out, and why boat owners choose the Anclote River and Gulf coast.",
   alternates: { canonical: "/guides/tarpon-springs-marina" },
@@ -56,7 +56,7 @@ export default function TarponSpringsMarinaGuidePage() {
 
         <p className="guide-cta">
           <Link href="/contact.html" className="quick-action">
-            Request a Quote
+            Get a Quote
           </Link>
         </p>
       </article>

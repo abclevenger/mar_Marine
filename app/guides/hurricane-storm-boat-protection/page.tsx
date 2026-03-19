@@ -4,9 +4,9 @@ import { PageShell } from "../../siteContent";
 import { NAP } from "../../lib/business";
 
 export const metadata: Metadata = {
-  title: "Hurricane & Storm Boat Protection Guide | MAR-MARINA Florida",
+  title: "Hurricane & Storm Boat Protection Guide | Mar Marina Florida",
   description:
-    "How marina storage can reduce storm risk, what to do before a storm, and how to prepare your boat. MAR-MARINA Tarpon Springs offers protected storage and haul-out.",
+    "How marina storage can reduce storm risk, what to do before a storm, and how to prepare your boat. Mar Marina Tarpon Springs offers protected storage and haul-out.",
   alternates: { canonical: "/guides/hurricane-storm-boat-protection" },
 };
 
@@ -48,7 +48,7 @@ export default function HurricaneStormBoatProtectionPage() {
         </section>
 
         <section>
-          <h2>MAR-MARINA and storm readiness</h2>
+          <h2>Mar Marina and storm readiness</h2>
           <p>
             We are in Tarpon Springs at the end of the Anclote River, in a location that many clients choose for its protected setting. We offer <Link href="/drystorage.html">dry storage</Link> and <Link href="/boatyardgallery.html">haul-out</Link> with two 35-ton travel lifts. If you are considering moving your boat to dry storage or scheduling a haul-out before storm season, contact us early: <a href={`tel:${NAP.phoneTel}`}>{NAP.phone}</a> or <a href={`mailto:${NAP.email}`}>{NAP.email}</a>. We can discuss availability and next steps.
           </p>
@@ -56,7 +56,7 @@ export default function HurricaneStormBoatProtectionPage() {
 
         <p className="guide-cta">
           <Link href="/contact.html" className="quick-action">
-            Request a Quote
+            Get a Quote
           </Link>
         </p>
       </article>

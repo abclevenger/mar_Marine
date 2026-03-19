@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { PageShell } from "../siteContent";
 
 export const metadata: Metadata = {
-  title: "A2P Messaging | MAR-MARINA",
-  description: "MAR-MARINA A2P (Application-to-Person) messaging terms and compliance information.",
+  title: "A2P Messaging | Mar Marina",
+  description: "Mar Marina A2P (Application-to-Person) messaging terms and compliance information.",
   alternates: { canonical: "/a2p" },
 };
 
@@ -16,7 +16,7 @@ export default function A2PPage() {
         <section>
           <h2>About A2P</h2>
           <p>
-            Application-to-Person (A2P) messaging refers to automated text (SMS) or other messages sent from a business to consumers. MAR-MARINA may use A2P messaging for appointment reminders, service updates, or other communications you have agreed to receive.
+            Application-to-Person (A2P) messaging refers to automated text (SMS) or other messages sent from a business to consumers. Mar Marina may use A2P messaging for appointment reminders, service updates, or other communications you have agreed to receive.
           </p>
         </section>
         <section>

@@ -25,21 +25,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const canonical = `/services/${page.slug}`;
 
   return {
-    title: `${page.title} | MAR-MARINA`,
+    title: `${page.title} | Mar Marina`,
     description: page.description,
-    keywords: `${page.primaryKeyword}, marina Tarpon Springs, MAR-MARINA`,
+    keywords: `${page.primaryKeyword}, marina Tarpon Springs, Mar Marina`,
     alternates: { canonical },
     openGraph: {
-      title: `${page.title} | MAR-MARINA`,
+      title: `${page.title} | Mar Marina`,
       description: page.description,
       url: canonical,
-      siteName: "MAR-MARINA",
+      siteName: "Mar Marina",
       type: "website",
-      images: [{ url: "/img/first.jpg", alt: "MAR-MARINA service location" }],
+      images: [{ url: "/img/first.jpg", alt: "Mar Marina service location" }],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${page.title} | MAR-MARINA`,
+      title: `${page.title} | Mar Marina`,
       description: page.description,
       images: ["/img/first.jpg"],
     },
@@ -62,7 +62,7 @@ export default async function ServiceLandingPage({ params }: Props) {
     areaServed: { "@type": "City", name: "Tarpon Springs" },
     provider: {
       "@type": "Marina",
-      name: "MAR-MARINA",
+      name: "Mar Marina",
       url: SITE_URL,
       telephone: NAP.phone,
       address: {
@@ -91,10 +91,10 @@ export default async function ServiceLandingPage({ params }: Props) {
             <p className="home-subhead">{page.intro}</p>
             <div className="home-inline-cta">
               <Link href="/contact.html#quote" className="btn-hero btn-hero-primary">
-                Get a Fast Quote
+                Get a Quote
               </Link>
               <Link href="/contact.html#quote" className="btn-hero btn-hero-outline btn-hero-outline--dark">
-                Schedule Inspection
+                Get a Quote
               </Link>
               <a href={`tel:${NAP.phoneTel}`} className="btn-hero btn-hero-outline btn-hero-outline--dark">
                 Call Now
@@ -128,7 +128,7 @@ export default async function ServiceLandingPage({ params }: Props) {
           </div>
           <div className="home-cta-band-actions">
             <Link href="/contact.html#quote" className="btn-hero btn-hero-primary">
-              Request an Estimate
+              Get a Quote
             </Link>
             <a href={`tel:${NAP.phoneTel}`} className="btn-hero btn-hero-outline btn-hero-outline--dark">
               Call Now

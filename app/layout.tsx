@@ -15,32 +15,32 @@ const openSans = Open_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mar-marina.org"),
-  applicationName: "MAR-MARINA",
-  title: "MAR-MARINA in Tarpon Springs, Florida",
+  applicationName: "Mar Marina",
+  title: "Mar Marina in Tarpon Springs, Florida",
   description:
-    "MAR-MARINA is a full-service, protected-harbor marina located at the end of the Anclote River and the Gulf Intracoastal Waterway in Tarpon Springs, Florida.",
+    "Mar Marina is a full-service, protected-harbor marina located at the end of the Anclote River and the Gulf Intracoastal Waterway in Tarpon Springs, Florida.",
   keywords:
     "Tarpon Springs, Florida, marina, full service, intracoastal waterway, protected harbor, Gulf, Anclote River, dry dock, wet slips, boat yard",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://mar-marina.org/",
-    siteName: "MAR-MARINA",
-    title: "MAR-MARINA in Tarpon Springs, Florida",
+    siteName: "Mar Marina",
+    title: "Mar Marina in Tarpon Springs, Florida",
     description:
-      "MAR-MARINA is a full-service, protected-harbor marina located at the end of the Anclote River and the Gulf Intracoastal Waterway in Tarpon Springs, Florida.",
+      "Mar Marina is a full-service, protected-harbor marina located at the end of the Anclote River and the Gulf Intracoastal Waterway in Tarpon Springs, Florida.",
     images: [
       {
         url: "/img/first.jpg",
-        alt: "MAR-MARINA wet slips and dry storage",
+        alt: "Mar Marina wet slips and dry storage",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "MAR-MARINA in Tarpon Springs, Florida",
+    title: "Mar Marina in Tarpon Springs, Florida",
     description:
-      "MAR-MARINA is a full-service, protected-harbor marina located at the end of the Anclote River and the Gulf Intracoastal Waterway in Tarpon Springs, Florida.",
+      "Mar Marina is a full-service, protected-harbor marina located at the end of the Anclote River and the Gulf Intracoastal Waterway in Tarpon Springs, Florida.",
     images: ["/img/first.jpg"],
   },
   robots: {

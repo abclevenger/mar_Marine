@@ -30,7 +30,7 @@ export function GlobalFooter() {
     <footer className="global-footer" role="contentinfo">
       <div className="global-footer-top line">
         <div className="global-footer-brand">
-          <p className="global-footer-brand-name">MAR-MARINA</p>
+          <p className="global-footer-brand-name">Mar Marina</p>
           <p className="global-footer-tagline">
             Wet slips, dry storage, and 35-ton haul-out in Tarpon Springs—Anclote River.
           </p>
@@ -81,7 +81,7 @@ export function GlobalFooter() {
             </address>
             <p className="global-footer-cta">
               <a href="/contact.html#quote" className="global-footer-cta-btn">
-                Get a Fast Quote
+                Get a Quote
               </a>
             </p>
           </div>
@@ -98,7 +98,7 @@ export function GlobalFooter() {
           </ul>
         </nav>
         <p className="global-footer-copy">
-          © 2026 MAR-MARINA. All rights reserved. |{" "}
+          © 2026 Mar Marina. All rights reserved. |{" "}
           <a className="global-footer-ymbs" href="https://www.ymbs.pro" target="_blank" rel="noopener noreferrer">
             <img src="/img/ymbs-logo.png" alt="YMBS" width="98" height="28" />
           </a>

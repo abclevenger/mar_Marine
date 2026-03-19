@@ -36,7 +36,7 @@ const CASE_STUDIES: CaseStudy[] = [
 
 export function CaseStudyPairs() {
   return (
-    <section className="home-section case-studies" aria-labelledby="case-studies-heading">
+    <section className="home-section case-studies" id="projects" aria-labelledby="case-studies-heading">
       <div className="line">
         <div className="home-section-head">
           <h2 id="case-studies-heading" className="home-heading">
@@ -46,7 +46,6 @@ export function CaseStudyPairs() {
             Structured examples to show how we handle real marine service workflows in Tarpon Springs.
           </p>
         </div>
-        {/* TODO: Replace placeholder photo pairs and copy with verified project-specific assets and metrics. */}
         <div className="case-study-grid">
           {CASE_STUDIES.map((study) => (
             <article key={study.title} className="case-study-card">
@@ -57,8 +56,10 @@ export function CaseStudyPairs() {
                   <figcaption>Before</figcaption>
                 </figure>
                 <figure>
-                  <img src={study.afterImage} alt={study.afterAlt} />
-                  <figcaption>After</figcaption>
+                  <div className="case-study-coming-soon" aria-label="After image coming soon">
+                    Coming Soon
+                  </div>
+                  <figcaption>After (Coming Soon)</figcaption>
                 </figure>
               </div>
               <p>

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { PageShell } from "../siteContent";
 
 export const metadata: Metadata = {
-  title: "Accessibility | MAR-MARINA",
-  description: "MAR-MARINA commitment to digital accessibility and how we support all users.",
+  title: "Accessibility | Mar Marina",
+  description: "Mar Marina commitment to digital accessibility and how we support all users.",
   alternates: { canonical: "/accessibility" },
 };
 
@@ -16,7 +16,7 @@ export default function AccessibilityPage() {
         <section>
           <h2>Our Commitment</h2>
           <p>
-            MAR-MARINA is committed to ensuring our website and services are accessible to people with disabilities. We aim to conform to applicable accessibility standards and to improve the experience for everyone.
+            Mar Marina is committed to ensuring our website and services are accessible to people with disabilities. We aim to conform to applicable accessibility standards and to improve the experience for everyone.
           </p>
         </section>
         <section>

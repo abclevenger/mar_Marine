@@ -11,7 +11,7 @@ type Props = {
 export function LeadCtaSection({
   title,
   description,
-  primaryLabel = "Get a Fast Quote",
+  primaryLabel = "Get a Quote",
   secondaryLabel = "Call Now",
 }: Props) {
   return (

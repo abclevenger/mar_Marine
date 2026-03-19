@@ -4,9 +4,9 @@ import { PageShell } from "../../siteContent";
 import { NAP } from "../../lib/business";
 
 export const metadata: Metadata = {
-  title: "Dry Storage vs Wet Slips | MAR-MARINA Tarpon Springs",
+  title: "Dry Storage vs Wet Slips | Mar Marina Tarpon Springs",
   description:
-    "Compare dry storage and wet slips: pros, cons, maintenance, storm exposure, and who each option is best for. MAR-MARINA offers both in Tarpon Springs.",
+    "Compare dry storage and wet slips: pros, cons, maintenance, storm exposure, and who each option is best for. Mar Marina offers both in Tarpon Springs.",
   alternates: { canonical: "/guides/dry-storage-vs-wet-slips" },
 };
 
@@ -49,13 +49,13 @@ export default function DryStorageVsWetSlipsPage() {
         <section>
           <h2>Who each option is best for</h2>
           <p>
-            Wet slips suit regular boaters who want quick access and are okay with in-water maintenance. Dry storage suits seasonal users, those who want to limit exposure to weather and fouling, and anyone who wants a clear storm-season option. At MAR-MARINA we offer both <Link href="/drystorage.html">wet slips</Link> and <Link href="/drystorage.html">dry storage</Link> in Tarpon Springs, including rack storage for boats up to 28&apos; and dry storage for boats up to 55&apos; x 20&apos;. <Link href="/contact.html">Contact Us</Link> to discuss which fits your boat and use.
+            Wet slips suit regular boaters who want quick access and are okay with in-water maintenance. Dry storage suits seasonal users, those who want to limit exposure to weather and fouling, and anyone who wants a clear storm-season option. At Mar Marina we offer both <Link href="/drystorage.html">wet slips</Link> and <Link href="/drystorage.html">dry storage</Link> in Tarpon Springs, including rack storage for boats up to 28&apos; and dry storage for boats up to 55&apos; x 20&apos;. <Link href="/contact.html">Contact Us</Link> to discuss which fits your boat and use.
           </p>
         </section>
 
         <p className="guide-cta">
           <Link href="/contact.html" className="quick-action">
-            Request a Quote
+            Get a Quote
           </Link>
         </p>
       </article>

@@ -26,7 +26,6 @@ const TESTIMONIALS: Testimonial[] = [
 export function TestimonialCards() {
   return (
     <>
-      {/* TODO: Replace with additional verified testimonials and before/after project references. */}
       <div className="home-quote-grid">
         {TESTIMONIALS.map((item) => (
           <blockquote key={item.author} className="home-quote-card">

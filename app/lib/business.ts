@@ -4,15 +4,15 @@
  */
 
 export const BUSINESS = {
-  name: "MAR-MARINA",
-  legalName: "MAR-MARINA",
+  name: "Mar Marina",
+  legalName: "Mar Marina",
   tagline: "Full-service, protected-harbor marina at the end of the Anclote River and the Gulf Intracoastal Waterway in Tarpon Springs, Florida.",
 } as const;
 
 export const NAP = {
-  name: "MAR-MARINA",
+  name: "Mar Marina",
   street: "761 Anclote Rd.",
-  streetAlternate: "761 Anclote Road or by Google maps (761 Flaherty Road)",
+  streetAlternate: "761 Anclote Rd., Tarpon Springs, FL 34689",
   city: "Tarpon Springs",
   region: "FL",
   postalCode: "34689",
@@ -24,7 +24,7 @@ export const NAP = {
 
 /** One-line factual summary for LLMs and snippets. */
 export const SUMMARY_ONE_LINE =
-  "MAR-MARINA in Tarpon Springs, Florida offers wet slips, dry storage, boat haul-out up to 35 tons, and on-site repair and maintenance.";
+  "Mar Marina in Tarpon Springs, Florida offers wet slips, dry storage, boat haul-out up to 35 tons, and on-site repair and maintenance.";
 
 /** Service area for schema and copy. */
 export const AREA_SERVED = ["Tarpon Springs", "Florida", "Gulf Coast", "Anclote River", "Pasco County"] as const;
