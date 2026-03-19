@@ -81,7 +81,7 @@ export function GlobalFooter() {
             </address>
             <p className="global-footer-cta">
               <a href="/contact.html#quote" className="global-footer-cta-btn">
-                Request a Quote
+                Get a Fast Quote
               </a>
             </p>
           </div>
@@ -99,8 +99,8 @@ export function GlobalFooter() {
         </nav>
         <p className="global-footer-copy">
           © 2026 MAR-MARINA. All rights reserved. |{" "}
-          <a href="https://ymbs.pro" target="_blank" rel="noopener noreferrer">
-            ymbs.pro
+          <a className="global-footer-ymbs" href="https://www.ymbs.pro" target="_blank" rel="noopener noreferrer">
+            <img src="/img/ymbs-logo.png" alt="YMBS" width="98" height="28" />
           </a>
         </p>
       </div>

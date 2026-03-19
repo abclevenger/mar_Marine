@@ -10,10 +10,10 @@ export function ConversionCTA({ variant = "default", className = "" }: Props) {
   if (variant === "quote") {
     return (
       <div className={`cta-block ${className}`}>
-        <p className="cta-heading">Request a Quote for Storage or Service</p>
+        <p className="cta-heading">Get a Fast Quote for Storage or Service</p>
         <p>
           <Link href="/contact.html" className="quick-action">
-            Request a Quote
+            Get a Fast Quote
           </Link>
           {" · "}
           <a href={`tel:${NAP.phoneTel}`} className="cta-link">{NAP.phone}</a>

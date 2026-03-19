@@ -2,18 +2,21 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import Script from "next/script";
+import { CaseStudyPairs } from "./components/CaseStudyPairs";
 import { ContactForm } from "./components/ContactForm";
-import { ConversionCTA } from "./components/ConversionCTA";
 import { HomeHero } from "./components/HomeHero";
+import { LeadCtaSection } from "./components/LeadCtaSection";
+import { LeadServiceCards } from "./components/LeadServiceCards";
+import { QuoteRequestSection } from "./components/QuoteRequestSection";
 import { SiteHeaderNav } from "./components/SiteHeaderNav";
-import { VimeoClickToPlay } from "./components/VimeoClickToPlay";
+import { TestimonialCards } from "./components/TestimonialCards";
 import { HOURS, NAP, SUMMARY_ONE_LINE, TRUST_FACTS } from "./lib/business";
 
 const BASE_DESCRIPTION =
-  "MAR-MARINA is a full-service, protected-harbor marina located at the end of the Anclote River and the Gulf Intracoastal Waterway in Tarpon Springs, Florida.";
+  "Full-service boat repair, storage, and marine maintenance in Tarpon Springs, Florida. MAR-MARINA handles inspections, painting, haul-out, and marina services with fast quote response.";
 
 const BASE_KEYWORDS =
-  "Tarpon Springs, Florida, marina, full service, intracoastal waterway, protected harbor, Gulf, Anclote River, dry dock, wet slips, boat yard";
+  "boat repair Tarpon Springs, boat storage Tarpon Springs, marine service Tarpon Springs, marina Tarpon Springs, boat maintenance Tarpon Springs, boat painting Tarpon Springs";
 const SITE_NAME = "MAR-MARINA";
 const OG_IMAGE = "/img/first.jpg";
 
@@ -36,14 +39,14 @@ export function PageShell({
 }
 
 export const homeMetadata: Metadata = {
-  title: "MAR-MARINA in Tarpon Springs, Florida",
+  title: "Boat Repair & Storage Tarpon Springs | MAR-MARINA",
   description: BASE_DESCRIPTION,
   keywords: BASE_KEYWORDS,
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "MAR-MARINA in Tarpon Springs, Florida",
+    title: "Boat Repair & Storage Tarpon Springs | MAR-MARINA",
     description: BASE_DESCRIPTION,
     url: "/",
     siteName: SITE_NAME,
@@ -52,7 +55,7 @@ export const homeMetadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "MAR-MARINA in Tarpon Springs, Florida",
+    title: "Boat Repair & Storage Tarpon Springs | MAR-MARINA",
     description: BASE_DESCRIPTION,
     images: [OG_IMAGE],
   },
@@ -160,10 +163,26 @@ export function HomeContent() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "What types of storage does MAR-MARINA offer?",
+        name: "Do you provide boat repair in Tarpon Springs?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "MAR-MARINA offers wet slips and dry storage in Tarpon Springs, Florida. Dry storage for boats up to 55' x 20'; rack storage for boats up to 28' with forklift in-out. Wet slips for boats up to 75' x 20' with 7' draft.",
+          text: "Yes. MAR-MARINA provides boat repair and marine maintenance in Tarpon Springs, including mechanical support, detailing, painting, and gelcoat restoration through our on-site team and trusted vendors.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What boat storage options are available in Tarpon Springs?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "MAR-MARINA offers wet slips, dry storage, and rack storage in Tarpon Springs. Wet slips support boats up to 75' x 20' with 7' draft; dry storage supports up to 55' x 20'; rack storage supports boats up to 28'.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can you handle inspections and estimates before service?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. You can request an inspection or estimate by phone or form. Share boat type, service needs, and timeline, and we will confirm fit, schedule windows, and next steps.",
         },
       },
       {
@@ -171,31 +190,15 @@ export function HomeContent() {
         name: "How large of a boat can you haul?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "MAR-MARINA can haul boats up to 35 tons. We have two 35-ton marine travel lifts at our Tarpon Springs location at the end of the Anclote River.",
+          text: "MAR-MARINA can haul boats up to 35 tons with two 35-ton marine travel lifts at our Tarpon Springs location.",
         },
       },
       {
         "@type": "Question",
-        name: "Is the marina secure?",
+        name: "Where is your marina located?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. MAR-MARINA has a locked gate, 24-hour on-site security, remote control main door, and overnight surveillance. The marina is in a protected location at the end of the Anclote River in Tarpon Springs, Florida.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Where is MAR-MARINA located?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "MAR-MARINA is located at 761 Anclote Rd., Tarpon Springs, FL 34689, at the end of the Anclote River and the Gulf Intracoastal Waterway.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "How can I get an estimate?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Call (727) 939-1589 or email info@mar-marina.com for pricing and availability. We offer daily, weekly, and monthly rates for dry storage and wet slips.",
+          text: "MAR-MARINA is located at 761 Anclote Rd., Tarpon Springs, FL 34689, with access at the end of the Anclote River and near the Gulf Intracoastal Waterway.",
         },
       },
     ],
@@ -213,14 +216,10 @@ export function HomeContent() {
 
       <section className="home-trust-strip" aria-label="Trust and credibility">
         <div className="line home-trust-strip-inner">
-          <p>
-            <strong>Serving Tarpon Springs boat owners for over {TRUST_FACTS.yearsExperience} years</strong>
-          </p>
-          <p>Two 35-ton travel lifts</p>
-          <p>24-hour on-site security</p>
-          <p>
-            Call <a href={`tel:${NAP.phoneTel}`}>{NAP.phone}</a> for availability
-          </p>
+          <p>Experienced Marine Service</p>
+          <p>Secure Marina Access</p>
+          <p>Repair, Storage &amp; Maintenance</p>
+          <p>Local Tarpon Springs Service</p>
         </div>
       </section>
 
@@ -228,148 +227,131 @@ export function HomeContent() {
         <div className="line">
           <div className="home-section-head">
             <h2 id="home-services-heading" className="home-heading">
-              What we do
+              Marine services designed to keep you on the water
             </h2>
             <p className="home-subhead">
-              Storage, lift, and boatyard work in one place. Pick what you need—we&apos;ll tell you if we can take the boat and when.
+              From boat repair in Tarpon Springs to dry storage, inspections, and refinishing, our
+              team gives you one clear path to service and scheduling.
             </p>
           </div>
-          <div className="service-cards">
-            <Link href="/drystorage.html" className="service-card">
-              <span className="service-card-label">Storage</span>
-              <h3 className="service-card-title">Wet slips</h3>
-              <p className="service-card-copy">
-                In-water slips up to 75&apos; × 20&apos;, 7&apos; draft. New docks, 30/50/100 amp power. For owners who want to step on and go.
-              </p>
-              <span className="service-card-link">View slip details →</span>
-            </Link>
-            <Link href="/drystorage.html" className="service-card">
-              <span className="service-card-label">Storage</span>
-              <h3 className="service-card-title">Dry &amp; rack storage</h3>
-              <p className="service-card-copy">
-                Dry storage to 55&apos; × 20&apos;. Rack storage to 28&apos; with forklift in-out. Daily, weekly, or monthly terms.
-              </p>
-              <span className="service-card-link">Rates &amp; sizes →</span>
-            </Link>
-            <Link href="/boatyardgallery.html" className="service-card">
-              <span className="service-card-label">Boatyard</span>
-              <h3 className="service-card-title">Haul-out &amp; lift</h3>
-              <p className="service-card-copy">
-                Two 35-ton travel lifts. Haul, block, bottom work, and launch coordinated with our crew on site.
-              </p>
-              <span className="service-card-link">See the yard →</span>
-            </Link>
-            <Link href="/drystorage.html" className="service-card">
-              <span className="service-card-label">Service</span>
-              <h3 className="service-card-title">Repair &amp; maintenance</h3>
-              <p className="service-card-copy">
-                Mechanics, detailing, painting, waxing, gelcoat. Work is done by our people or vendors we trust—not random subcontractors.
-              </p>
-              <span className="service-card-link">Service list →</span>
-            </Link>
-            <Link href="/guides/hurricane-storm-boat-protection" className="service-card service-card--accent">
-              <span className="service-card-label">Location</span>
-              <h3 className="service-card-title">Protected harbor</h3>
-              <p className="service-card-copy">
-                End of the Anclote River, away from open Gulf exposure. Many owners choose us for storm season and year-round peace of mind.
-              </p>
-              <span className="service-card-link">Storm prep guide →</span>
-            </Link>
-          </div>
+          <LeadServiceCards />
           <div className="home-inline-cta">
-            <a href={`tel:${NAP.phoneTel}`} className="btn-hero btn-hero-primary">
+            <Link href="/contact.html#quote" className="btn-hero btn-hero-primary">
+              Get a Fast Quote
+            </Link>
+            <Link href="/contact.html#quote" className="btn-hero btn-hero-outline btn-hero-outline--dark">
+              Schedule Inspection
+            </Link>
+            <a href={`tel:${NAP.phoneTel}`} className="btn-hero btn-hero-outline btn-hero-outline--dark">
               Call Now
             </a>
-            <Link href="/contact.html" className="btn-hero btn-hero-outline btn-hero-outline--dark">
-              Request a Quote
-            </Link>
           </div>
         </div>
       </section>
 
-      <section className="home-section home-media">
-        <div className="line home-media-grid">
-          <div className="home-media-copy">
-            <h2 className="home-heading">See the marina</h2>
-            <p>
-              Short walkthrough of our facility. Prefer to talk? Call and we&apos;ll answer questions about your boat size and timeline.
-            </p>
-            <ConversionCTA variant="quote" className="home-media-cta" />
-          </div>
-          <div className="home-media-video">
-            <VimeoClickToPlay />
-          </div>
-        </div>
-      </section>
-
-      <section className="home-section home-why" id="why-choose-us">
+      <section className="home-section home-why" id="why-choose-us" aria-labelledby="home-why-heading">
         <div className="line">
           <div className="home-section-head">
-            <h2 className="home-heading">Why owners stay with us</h2>
+            <h2 id="home-why-heading" className="home-heading">
+              Why Tarpon Springs boat owners choose MAR-MARINA
+            </h2>
             <p className="home-subhead">{SUMMARY_ONE_LINE}</p>
           </div>
           <div className="why-grid">
             <article className="why-card">
-              <h3>Security you can verify</h3>
+              <h3>Experienced local marine service</h3>
               <p>
-                Locked gate, remote-controlled main door, overnight surveillance, and 24-hour on-site security. Your boat isn&apos;t parked on an open lot.
+                Trusted by Gulf Coast owners for over {TRUST_FACTS.yearsExperience}, with practical
+                scheduling and clear communication from first call to completion.
               </p>
             </article>
             <article className="why-card">
-              <h3>Lift capacity that matches real boats</h3>
+              <h3>Multiple services in one place</h3>
               <p>
-                Two 35-ton marine travel lifts. Haul-out and yard work stay under one roof so you&apos;re not chasing multiple vendors.
+                Repair, maintenance, storage, haul-out, and refinishing can be coordinated at one
+                location so you avoid vendor handoff delays.
               </p>
             </article>
             <article className="why-card">
-              <h3>Experience on the water</h3>
+              <h3>Trusted care for valuable boats</h3>
               <p>
-                {TRUST_FACTS.yearsExperience} years in Tarpon Springs. Management crew with {TRUST_FACTS.managementExperienceCombined} years combined in boatyard operations.
+                Secure access, on-site oversight, and {TRUST_FACTS.travelLifts} travel lifts rated to{" "}
+                {TRUST_FACTS.travelLiftCapacityTons} tons support safer handling and project control.
+              </p>
+            </article>
+            <article className="why-card">
+              <h3>Convenient Tarpon Springs location</h3>
+              <p>
+                End-of-river positioning near the Gulf Intracoastal Waterway makes it easier for local
+                owners and seasonal residents to plan service windows.
+              </p>
+            </article>
+            <article className="why-card">
+              <h3>Clear quote process</h3>
+              <p>
+                Submit service details once and we follow up with fit, schedule guidance, and estimate
+                next steps during business hours.
+              </p>
+            </article>
+            <article className="why-card">
+              <h3>Built for repeat service</h3>
+              <p>
+                We support recurring maintenance and storage plans so charter operators and high-use
+                owners can keep boats available.
               </p>
             </article>
           </div>
-          <p className="authority-links home-why-links">
-            <Link href="/guides/tarpon-springs-marina">Marina guide</Link>
-            {" · "}
-            <Link href="/guides/choosing-a-marina-tarpon-springs">Choosing a marina</Link>
-            {" · "}
-            <Link href="/wetslips.html">Customer reviews</Link>
-          </p>
         </div>
       </section>
 
-      <section className="home-section home-work-gallery" id="projects" aria-labelledby="home-work-heading">
+      <section className="home-section home-proof" id="projects" aria-labelledby="home-proof-heading">
         <div className="line">
           <div className="home-section-head">
-            <h2 id="home-work-heading" className="home-heading">Recent work &amp; facility</h2>
+            <h2 id="home-proof-heading" className="home-heading">Before/after results and marina capability</h2>
             <p className="home-subhead">
-              Haul-outs, storage, and yard projects. Full photo set on the boatyard page.
+              Visual proof helps owners evaluate workmanship quickly. This section is structured to
+              support stronger project storytelling.
+            </p>
+          </div>
+          {/* TODO: Replace with true before/after image pairs and project outcomes from completed jobs. */}
+          <div className="home-proof-highlights" role="list" aria-label="Capability highlights">
+            <p role="listitem">
+              <strong>{TRUST_FACTS.yearsExperience}</strong> local years of marine service
+            </p>
+            <p role="listitem">
+              <strong>{TRUST_FACTS.travelLifts}</strong> on-site travel lifts for haul-out workflow
+            </p>
+            <p role="listitem">
+              <strong>{TRUST_FACTS.travelLiftCapacityTons} tons</strong> haul-out capacity
+            </p>
+            <p role="listitem">
+              <strong>Tarpon Springs</strong> marina, repair, and storage operations
             </p>
           </div>
           <div className="home-work-grid">
             <figure className="home-work-item">
-              <img src="/img/first-small.jpg" alt="" />
+              <img src="/img/first-small.jpg" alt="Wet slips and docks at MAR-MARINA in Tarpon Springs." />
               <figcaption>Wet slips &amp; docks</figcaption>
             </figure>
             <figure className="home-work-item">
-              <img src="/img/second-small.jpg" alt="" />
+              <img src="/img/second-small.jpg" alt="Protected marina basin at MAR-MARINA." />
               <figcaption>Protected basin</figcaption>
             </figure>
             <figure className="home-work-item">
-              <img src="/img/third-small.jpg" alt="" />
+              <img src="/img/third-small.jpg" alt="Anclote River access near MAR-MARINA." />
               <figcaption>Anclote River access</figcaption>
             </figure>
             <figure className="home-work-item">
-              <img src="/img/fourth-small.jpg" alt="" />
-              <figcaption>Travel lift</figcaption>
+              <img src="/img/fourth-small.jpg" alt="Marine travel lift in active use for haul-out." />
+              <figcaption>Travel lift operations</figcaption>
             </figure>
             <figure className="home-work-item">
-              <img src="/img/6.jpg" alt="" />
-              <figcaption>Boatyard</figcaption>
+              <img src="/img/6.jpg" alt="Boatyard service area for repair and maintenance work." />
+              <figcaption>Repair workflow area</figcaption>
             </figure>
             <figure className="home-work-item">
-              <img src="/img/10.jpg" alt="" />
-              <figcaption>On-site service</figcaption>
+              <img src="/img/10.jpg" alt="On-site marine maintenance and service zone." />
+              <figcaption>Maintenance service zone</figcaption>
             </figure>
           </div>
           <p className="home-gallery-more">
@@ -380,121 +362,117 @@ export function HomeContent() {
         </div>
       </section>
 
+      <CaseStudyPairs />
+
       <section className="home-testimonials" id="testimonials" aria-labelledby="home-testimonials-heading">
         <div className="line">
           <h2 id="home-testimonials-heading" className="home-testimonials-title">
-            What boat owners say
+            Trusted by local owners and operators
           </h2>
-          <p className="home-testimonials-intro">Real feedback from our reviews page—edited for length, not tone.</p>
-          <div className="home-quote-grid">
-            <blockquote className="home-quote-card">
-              <p>
-                &ldquo;They pulled my crab boat out… done in one day. Their experience and connections for parts on large boats is incredible.&rdquo;
-              </p>
-              <footer>— Kevin F.</footer>
-            </blockquote>
-            <blockquote className="home-quote-card">
-              <p>
-                &ldquo;Capt Jean, Shane, and the crew did an amazing job… workmanship is second to none and the price point was more than reasonable.&rdquo;
-              </p>
-              <footer>— Mike T.</footer>
-            </blockquote>
-            <blockquote className="home-quote-card">
-              <p>
-                &ldquo;Private and secure. Best place for long term slip, storage, or out of water repairs.&rdquo;
-              </p>
-              <footer>— Rudy P.</footer>
-            </blockquote>
-          </div>
-          <p className="home-testimonials-more">
-            <Link href="/wetslips.html">Read More Reviews</Link>
+          <p className="home-testimonials-intro">
+            Feedback from customers who used our Tarpon Springs marina, storage, and repair services.
           </p>
+          <TestimonialCards />
         </div>
       </section>
 
-      <section className="home-cta-band" aria-label="Ready to get started">
-        <div className="line home-cta-band-inner">
-          <div>
-            <h2>Need storage, haul-out, or repair support?</h2>
-            <p>
-              Tell us your boat length and service need. We will confirm fit, timing, and next steps.
-            </p>
-          </div>
-          <div className="home-cta-band-actions">
-            <Link href="/contact.html#quote" className="btn-hero btn-hero-primary">
-              Request a Quote
-            </Link>
-            <a href={`tel:${NAP.phoneTel}`} className="btn-hero btn-hero-outline btn-hero-outline--dark">
-              Call Now
-            </a>
-          </div>
-        </div>
-      </section>
+      <LeadCtaSection
+        title="Need repair, storage, or maintenance this week?"
+        description="Get a fast quote, request an inspection, or call now to confirm timing and fit for your vessel."
+      />
 
       <section className="faq-block home-faq">
         <div className="line">
           <div className="home-section-head">
-            <h2 className="home-heading">Frequently asked questions</h2>
-            <p className="home-subhead">Storage sizes, haul limits, security, and how to get pricing.</p>
+            <h2 className="home-heading">Tarpon Springs marine service FAQs</h2>
+            <p className="home-subhead">Quick answers about repair, storage, inspections, and scheduling.</p>
           </div>
           <div className="faq-list">
             <details>
-              <summary>What types of storage does MAR-MARINA offer?</summary>
+              <summary>Do you provide boat repair in Tarpon Springs?</summary>
               <p>
-                Wet slips and dry storage in Tarpon Springs. Dry to 55&apos; × 20&apos;; rack to 28&apos; with forklift in-out; wet slips to 75&apos; × 20&apos; with 7&apos; draft.
+                Yes. We provide boat repair and marine maintenance in Tarpon Springs, including
+                mechanical work, detailing, painting, and gelcoat restoration.
+              </p>
+            </details>
+            <details>
+              <summary>What boat storage options are available?</summary>
+              <p>
+                We offer wet slips, dry storage, and rack storage based on vessel size and access needs.
+              </p>
+            </details>
+            <details>
+              <summary>Can I schedule an inspection before service?</summary>
+              <p>
+                Yes. Request an inspection or estimate and our team will confirm fit, timeline, and next
+                steps.
               </p>
             </details>
             <details>
               <summary>How large of a boat can you haul?</summary>
-              <p>
-                Up to 35 tons, using two 35-ton marine travel lifts at our marina on the Anclote River.
-              </p>
+              <p>Up to 35 tons using two 35-ton marine travel lifts at our Tarpon Springs location.</p>
             </details>
             <details>
-              <summary>Is the marina secure?</summary>
-              <p>
-                Yes—locked gate, 24-hour on-site security, remote main door, and overnight surveillance.
-              </p>
-            </details>
-            <details>
-              <summary>Where is MAR-MARINA located?</summary>
-              <p>761 Anclote Rd., Tarpon Springs, FL 34689, at the end of the Anclote River.</p>
-            </details>
-            <details>
-              <summary>How can I get an estimate?</summary>
+              <summary>How do I request an estimate?</summary>
               <p>
                 Call <a href={`tel:${NAP.phoneTel}`}>{NAP.phone}</a> or email{" "}
-                <a href={`mailto:${NAP.email}`}>{NAP.email}</a>. Use the form below for a written request.
+                <a href={`mailto:${NAP.email}`}>{NAP.email}</a>. You can also submit the quote form on
+                this page.
               </p>
             </details>
           </div>
         </div>
       </section>
 
-      <section className="home-quote-section" id="quote">
-        <div className="line home-quote-grid-layout">
-          <div className="home-quote-copy">
-            <h2 className="home-heading">Request a Quote or Callback</h2>
-            <p className="home-quote-lead">
-              Tell us your boat length, what you need (slip, dry storage, haul-out, or repair), and when you want to start. We respond during business hours.
+      <QuoteRequestSection />
+
+      <section className="home-section home-local-map" aria-labelledby="home-local-map-heading">
+        <div className="line">
+          <div className="home-section-head">
+            <h2 id="home-local-map-heading" className="home-heading">
+              Local marina and marine service in Tarpon Springs
+            </h2>
+            <p className="home-subhead">
+              Find us at the end of the Anclote River for boat repair, boat storage, marine
+              maintenance, and inspection scheduling.
             </p>
-            <address className="home-quote-nap">
-              <strong>MAR-MARINA</strong>
-              <br />
-              {NAP.street}
-              <br />
-              {NAP.city}, {NAP.region} {NAP.postalCode}
-              <br />
-              <a href={`tel:${NAP.phoneTel}`}>{NAP.phone}</a>
-              <br />
-              <a href={`mailto:${NAP.email}`}>{NAP.email}</a>
-            </address>
-            <a href={`tel:${NAP.phoneTel}`} className="btn-hero btn-hero-primary home-quote-call">
-              Call Now
-            </a>
           </div>
-          <div className="home-quote-form-wrap">
-            <ContactForm />
+          <div className="home-local-map-grid">
+            <article className="contact-info-card">
+              <h3>Visit or call for scheduling</h3>
+              <p>
+                {NAP.street}
+                <br />
+                {NAP.city}, {NAP.region} {NAP.postalCode}
+              </p>
+              <p className="contact-hours-block">
+                <strong>Hours</strong>
+                <br />
+                {HOURS.office}
+                <br />
+                {HOURS.yard}
+              </p>
+              <p className="quick-actions">
+                <a className="quick-action" href={`tel:${NAP.phoneTel}`}>
+                  Call Now
+                </a>
+                <Link className="quick-action" href="/contact.html#quote">
+                  Schedule Inspection
+                </Link>
+              </p>
+            </article>
+            <div className="map-card">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3517.4175021949045!2d-82.77631108440873!3d28.164215682604798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c28dac4a982a73%3A0x7f336f0742a01e7f!2s761+Flaherty+Rd%2C+Tarpon+Springs%2C+FL+34689!5e0!3m2!1sen!2sus!4v1461526898761"
+                width="100%"
+                height="360"
+                frameBorder="0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+                title="MAR-MARINA location map"
+              />
+            </div>
           </div>
         </div>
       </section>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import Script from "next/script";
+import { ConversionTracking } from "./components/ConversionTracking";
 import { GlobalFooter } from "./components/GlobalFooter";
 import { StickyMobileCta } from "./components/StickyMobileCta";
 import { NAP, AREA_SERVED, SERVICES_EXPLICIT, SITE_URL } from "./lib/business";
@@ -107,6 +108,7 @@ export default function RootLayout({
           data-widget-id="69bc367f8e4a64b1b4286163"
           strategy="afterInteractive"
         />
+        <ConversionTracking />
         <div className="layout-wrap">
           <div className="layout-main">{children}</div>
           <GlobalFooter />

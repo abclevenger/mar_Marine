@@ -177,7 +177,7 @@ export function SiteHeaderNav({ currentPath }: { currentPath: string }) {
             Call Now
           </a>
           <Link href="/contact.html#quote" className="nav-quote">
-            Request a Quote
+            Get a Fast Quote
           </Link>
         </div>
 
@@ -236,7 +236,7 @@ export function SiteHeaderNav({ currentPath }: { currentPath: string }) {
                 Call Now
               </a>
               <Link href="/contact.html#quote" onClick={() => setMenuOpen(false)}>
-                Request a Quote
+                Get a Fast Quote
               </Link>
             </div>
           </div>

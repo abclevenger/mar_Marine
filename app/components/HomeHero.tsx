@@ -13,35 +13,36 @@ export function HomeHero() {
           <div className="home-hero-copy">
             <p className="home-hero-eyebrow">Tarpon Springs, FL · Anclote River</p>
             <h1 className="home-hero-title">
-              Wet slips, dry storage, and 35-ton haul-out—one full-service marina.
+              Full-Service Boat Repair &amp; Storage in Tarpon Springs
             </h1>
             <p className="home-hero-lead">
-              Protected harbor at the end of the Anclote River. Storage, lift service, and boatyard work handled by our crew—not a call center.
+              Reliable marine repair, maintenance, painting, and storage with experienced service,
+              fast turnaround, and easy quote requests.
             </p>
             <div className="home-hero-cta-row">
-              <a href={`tel:${NAP.phoneTel}`} className="btn-hero btn-hero-primary">
-                Call Now
-              </a>
-              <Link href="/contact.html" className="btn-hero btn-hero-outline">
-                Request a Quote
+              <Link href="/contact.html#quote" className="btn-hero btn-hero-primary">
+                Get a Fast Quote
+              </Link>
+              <Link href="/contact.html#quote" className="btn-hero btn-hero-outline">
+                Schedule Inspection
               </Link>
             </div>
             <ul className="home-hero-trust" aria-label="Trust highlights">
               <li>
                 <span className="home-hero-trust-value">{TRUST_FACTS.yearsExperience}</span>
-                <span className="home-hero-trust-label">years here</span>
+                <span className="home-hero-trust-label">local experience</span>
               </li>
               <li>
-                <span className="home-hero-trust-value">2×{TRUST_FACTS.travelLiftCapacityTons}t</span>
-                <span className="home-hero-trust-label">travel lifts</span>
+                <span className="home-hero-trust-value">Repair + Storage</span>
+                <span className="home-hero-trust-label">one team</span>
               </li>
               <li>
-                <span className="home-hero-trust-value">24/7</span>
-                <span className="home-hero-trust-label">on-site security</span>
+                <span className="home-hero-trust-value">{TRUST_FACTS.travelLifts} lifts</span>
+                <span className="home-hero-trust-label">{TRUST_FACTS.travelLiftCapacityTons}-ton capability</span>
               </li>
               <li>
-                <span className="home-hero-trust-value">Haul to</span>
-                <span className="home-hero-trust-label">35 tons</span>
+                <span className="home-hero-trust-value">Call {NAP.phone}</span>
+                <span className="home-hero-trust-label">fast scheduling</span>
               </li>
             </ul>
           </div>

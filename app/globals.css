@@ -807,6 +807,15 @@ textarea:focus-visible {
   gap: 18px;
 }
 
+.lead-service-cards .service-card {
+  gap: 10px;
+}
+
+.lead-service-cta {
+  margin-top: auto;
+  width: 100%;
+}
+
 .service-card {
   display: flex;
   flex-direction: column;
@@ -949,6 +958,87 @@ textarea:focus-visible {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
+}
+
+.home-proof-highlights {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px 14px;
+  margin: 0 0 14px;
+}
+
+.home-proof-highlights p {
+  margin: 0;
+  padding: 10px 12px;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-sm);
+  background: #f7fbfe;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.home-proof-highlights strong {
+  color: var(--brand-dark);
+}
+
+.case-studies {
+  padding: clamp(28px, 4vw, 40px) 18px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-soft);
+  background: linear-gradient(180deg, #f3f9fc, #fff);
+}
+
+.case-study-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.case-study-card {
+  padding: 18px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-soft);
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(5, 34, 56, 0.08);
+}
+
+.case-study-card h3 {
+  margin: 0 0 10px;
+  color: var(--brand-dark);
+}
+
+.case-study-card p {
+  margin: 0 0 10px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.case-study-photos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.case-study-photos figure {
+  margin: 0;
+}
+
+.case-study-photos img {
+  display: block;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-soft);
+}
+
+.case-study-photos figcaption {
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 700;
 }
 
 .home-work-item {
@@ -1133,6 +1223,21 @@ textarea:focus-visible {
   border: 1px solid var(--border-soft);
 }
 
+.home-local-map {
+  padding: clamp(28px, 4vw, 40px) 18px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-soft);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.home-local-map-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 16px;
+  align-items: stretch;
+}
+
 .contact-page-layout {
   margin-top: clamp(26px, 4vw, 40px);
 }
@@ -1313,6 +1418,14 @@ textarea:focus-visible {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .home-proof-highlights {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .case-study-grid {
+    grid-template-columns: 1fr;
+  }
+
   .home-quote-grid {
     grid-template-columns: 1fr;
   }
@@ -1322,6 +1435,10 @@ textarea:focus-visible {
   }
 
   .contact-page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-local-map-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1359,6 +1476,14 @@ textarea:focus-visible {
   }
 
   .service-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .home-proof-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study-photos {
     grid-template-columns: 1fr;
   }
 
@@ -1746,6 +1871,7 @@ textarea:focus-visible {
 }
 
 .contact-form input,
+.contact-form select,
 .contact-form textarea {
   width: 100%;
   padding: 12px 14px;
@@ -1766,6 +1892,35 @@ textarea:focus-visible {
   font-size: 13px;
   line-height: 1.45;
   color: var(--text-muted);
+}
+
+.contact-form input[type="file"] {
+  padding: 10px;
+  background: #fff;
+}
+
+.inspection-scheduler {
+  margin-top: 14px;
+  padding: 14px;
+  border: 1px solid #d4e2eb;
+  border-radius: var(--radius-sm);
+  background: #f8fcff;
+}
+
+.inspection-scheduler h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: var(--brand-dark);
+}
+
+.inspection-scheduler p {
+  margin: 0 0 10px;
+  color: var(--text-muted);
+}
+
+.inspection-scheduler-form {
+  display: grid;
+  gap: 10px;
 }
 
 .consent-group {
@@ -2030,9 +2185,24 @@ textarea:focus-visible {
 }
 
 .global-footer-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   margin: 0;
   font-size: 12px;
   color: var(--text-muted);
+}
+
+.global-footer-ymbs {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.global-footer-ymbs img {
+  display: block;
+  width: auto;
+  height: 24px;
 }
 
 @media (max-width: 900px) {
