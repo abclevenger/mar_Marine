@@ -93,9 +93,6 @@ export default async function ServiceLandingPage({ params }: Props) {
               <Link href="/contact.html#quote" className="btn-hero btn-hero-primary">
                 Get a Quote
               </Link>
-              <Link href="/contact.html#quote" className="btn-hero btn-hero-outline btn-hero-outline--dark">
-                Get a Quote
-              </Link>
               <a href={`tel:${NAP.phoneTel}`} className="btn-hero btn-hero-outline btn-hero-outline--dark">
                 Call Now
               </a>

@@ -239,9 +239,6 @@ export function HomeContent() {
             <Link href="/contact.html#quote" className="btn-hero btn-hero-primary">
               Get a Quote
             </Link>
-            <Link href="/contact.html#quote" className="btn-hero btn-hero-outline btn-hero-outline--dark">
-              Get a Quote
-            </Link>
             <a href={`tel:${NAP.phoneTel}`} className="btn-hero btn-hero-outline btn-hero-outline--dark">
               Call Now
             </a>
@@ -320,7 +317,7 @@ export function HomeContent() {
 
       <LeadCtaSection
         title="Need repair, storage, or maintenance this week?"
-        description="Get a fast quote, request an inspection, or call now to confirm timing and fit for your vessel."
+        description="Get a quote or call now to confirm timing and fit for your vessel."
       />
 
       <section className="faq-block home-faq">
@@ -493,13 +490,25 @@ export function ReviewsContent() {
         <div className="line">
           <div className="home-section-head">
             <h2 className="home-heading">Mar Marina gallery</h2>
-            <p className="home-subhead">A quick look at our docks, basin, and facility operations.</p>
+            <p className="home-subhead">Facility views from slips, basin, and active haul-out operations.</p>
           </div>
           <div className="gallery-grid">
-            <img src="/img/first-small.jpg" alt="" />
-            <img src="/img/second-small.jpg" alt="" />
-            <img src="/img/third-small.jpg" alt="" />
-            <img src="/img/fourth-small.jpg" alt="" />
+            <figure className="gallery-item">
+              <img src="/img/first-small.jpg" alt="Marina slips and dock access at Mar Marina." />
+              <figcaption>Slip and dock access</figcaption>
+            </figure>
+            <figure className="gallery-item">
+              <img src="/img/second-small.jpg" alt="Protected basin area at Mar Marina." />
+              <figcaption>Protected basin</figcaption>
+            </figure>
+            <figure className="gallery-item">
+              <img src="/img/third-small.jpg" alt="Anclote River marina approach near Mar Marina." />
+              <figcaption>Anclote River approach</figcaption>
+            </figure>
+            <figure className="gallery-item">
+              <img src="/img/fourth-small.jpg" alt="Travel-lift zone used for haul-out and launch." />
+              <figcaption>Travel-lift operations</figcaption>
+            </figure>
           </div>
         </div>
       </section>
