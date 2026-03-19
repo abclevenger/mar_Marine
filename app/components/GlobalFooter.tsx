@@ -1,5 +1,6 @@
 const FOOTER_NAV = [
   { href: "/", label: "Home" },
+  { href: "/blogs", label: "Blog" },
   { href: "/wetslips.html", label: "Reviews" },
   { href: "/drystorage.html", label: "Services" },
   { href: "/boatyardgallery.html", label: "Gallery" },
