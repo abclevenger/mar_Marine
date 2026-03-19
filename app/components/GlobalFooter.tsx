@@ -28,37 +28,66 @@ const MARINA_ADDRESS = "761 Anclote Rd., Tarpon Springs, FL 34689";
 export function GlobalFooter() {
   return (
     <footer className="global-footer" role="contentinfo">
-      <div className="global-footer-inner line">
-        <nav className="global-footer-nav" aria-label="Footer">
-          <ul>
-            {FOOTER_NAV.map((item) => (
-              <li key={item.href}>
-                <a href={item.href}>{item.label}</a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <div className="global-footer-contact">
-          <p className="global-footer-address">
-            <a href="https://www.google.com/maps/search/?api=1&query=761+Anclote+Rd+Tarpon+Springs+FL+34689" target="_blank" rel="noopener noreferrer">
-              {MARINA_ADDRESS}
-            </a>
+      <div className="global-footer-top line">
+        <div className="global-footer-brand">
+          <p className="global-footer-brand-name">MAR-MARINA</p>
+          <p className="global-footer-tagline">
+            Wet slips, dry storage, and 35-ton haul-out in Tarpon Springs—Anclote River.
           </p>
-          <p>
-            <a href={`tel:${MARINA_PHONE.replace(/\D/g, "")}`}>{MARINA_PHONE}</a>
-            {" · "}
-            <a href={`mailto:${MARINA_EMAIL}`}>{MARINA_EMAIL}</a>
-          </p>
+          <a
+            className="global-footer-fb"
+            href="https://www.facebook.com/MarMarina1234/?skip_nax_wizard=true"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Facebook
+          </a>
         </div>
-        <nav className="global-footer-guides" aria-label="Guides and resources">
-          <ul>
-            {FOOTER_GUIDES.map((item) => (
-              <li key={item.href}>
-                <a href={item.href}>{item.label}</a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <div className="global-footer-columns">
+          <nav className="global-footer-col" aria-label="Site">
+            <p className="global-footer-col-title">Explore</p>
+            <ul>
+              {FOOTER_NAV.map((item) => (
+                <li key={item.href}>
+                  <a href={item.href}>{item.label}</a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <nav className="global-footer-col" aria-label="Guides">
+            <p className="global-footer-col-title">Guides</p>
+            <ul>
+              {FOOTER_GUIDES.map((item) => (
+                <li key={item.href}>
+                  <a href={item.href}>{item.label}</a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div className="global-footer-col global-footer-col--contact">
+            <p className="global-footer-col-title">Contact</p>
+            <address className="global-footer-address-block">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=761+Anclote+Rd+Tarpon+Springs+FL+34689"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {MARINA_ADDRESS}
+              </a>
+              <br />
+              <a href={`tel:${MARINA_PHONE.replace(/\D/g, "")}`}>{MARINA_PHONE}</a>
+              <br />
+              <a href={`mailto:${MARINA_EMAIL}`}>{MARINA_EMAIL}</a>
+            </address>
+            <p className="global-footer-cta">
+              <a href="/contact.html#quote" className="global-footer-cta-btn">
+                Request a quote
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="global-footer-bottom line">
         <nav className="global-footer-legal" aria-label="Legal and policies">
           <ul>
             {FOOTER_LEGAL.map((item) => (
@@ -68,7 +97,7 @@ export function GlobalFooter() {
             ))}
           </ul>
         </nav>
-        <p className="global-footer-copy">Copyright 2026 MAR-MARINA</p>
+        <p className="global-footer-copy">© 2026 MAR-MARINA. All rights reserved.</p>
       </div>
     </footer>
   );

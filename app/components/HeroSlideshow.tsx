@@ -47,7 +47,12 @@ const SLIDES: Slide[] = [
 
 const AUTO_ADVANCE_MS = 5500;
 
-export function HeroSlideshow() {
+type HeroSlideshowProps = {
+  /** When true, hide on-slide captions so a custom hero overlay can show the primary message (SEO copy stays in sr-only block). */
+  suppressCaptions?: boolean;
+};
+
+export function HeroSlideshow({ suppressCaptions = false }: HeroSlideshowProps) {
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
 
@@ -72,12 +77,14 @@ export function HeroSlideshow() {
       onMouseLeave={() => setPaused(false)}
       aria-label="Marina photo slideshow"
     >
-      <div className="hero-slide active-slide">
+      <div className={`hero-slide active-slide${suppressCaptions ? " hero-slide--no-caption" : ""}`}>
         <img src={activeSlide.image} alt="" />
-        <div className="carousel-text">
-          <h2>{activeSlide.heading}</h2>
-          {activeSlide.subheading ? <p>{activeSlide.subheading}</p> : null}
-        </div>
+        {!suppressCaptions ? (
+          <div className="carousel-text">
+            <h2>{activeSlide.heading}</h2>
+            {activeSlide.subheading ? <p>{activeSlide.subheading}</p> : null}
+          </div>
+        ) : null}
       </div>
 
       <div className="hero-dots" role="tablist" aria-label="Slide selector">

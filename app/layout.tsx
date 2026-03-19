@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import { GlobalFooter } from "./components/GlobalFooter";
-import { NAP, AREA_SERVED, SERVICES_EXPLICIT, SITE_URL, TRUST_FACTS } from "./lib/business";
+import { StickyMobileCta } from "./components/StickyMobileCta";
+import { NAP, AREA_SERVED, SERVICES_EXPLICIT, SITE_URL } from "./lib/business";
 import "./globals.css";
 
 const openSans = Open_Sans({
@@ -102,6 +103,7 @@ export default function RootLayout({
           <div className="layout-main">{children}</div>
           <GlobalFooter />
         </div>
+        <StickyMobileCta />
       </body>
     </html>
   );

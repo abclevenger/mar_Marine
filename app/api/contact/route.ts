@@ -8,7 +8,10 @@ type ContactPayload = {
   name?: string;
   email?: string;
   phone?: string;
+  serviceNeeded?: string;
   message?: string;
+  sms_consent_transactional?: boolean;
+  sms_consent_marketing?: boolean;
   company?: string;
 };
 
@@ -18,6 +21,10 @@ function clean(value?: string): string {
 
 function isValidEmail(value: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+}
+
+function toBoolean(value: unknown): boolean {
+  return value === true || value === "true" || value === "on" || value === 1;
 }
 
 export async function POST(request: Request) {
@@ -32,7 +39,10 @@ export async function POST(request: Request) {
   const name = clean(body.name);
   const email = clean(body.email);
   const phone = clean(body.phone);
+  const serviceNeeded = clean(body.serviceNeeded);
   const message = clean(body.message);
+  const smsConsentTransactional = toBoolean(body.sms_consent_transactional);
+  const smsConsentMarketing = toBoolean(body.sms_consent_marketing);
   const company = clean(body.company);
 
   if (company) {
@@ -42,6 +52,13 @@ export async function POST(request: Request) {
   if (!name || !email || !message) {
     return NextResponse.json(
       { error: "Name, email, and message are required." },
+      { status: 400 },
+    );
+  }
+
+  if (!smsConsentTransactional) {
+    return NextResponse.json(
+      { error: "You must agree to receive service-related messages to submit this form." },
       { status: 400 },
     );
   }
@@ -61,7 +78,10 @@ export async function POST(request: Request) {
         name,
         email,
         phone,
-        message,
+        serviceNeeded,
+        message: serviceNeeded ? `Service needed: ${serviceNeeded}\n\n${message}` : message,
+        sms_consent_transactional: smsConsentTransactional,
+        sms_consent_marketing: smsConsentMarketing,
         source: "mar-marina-next-contact-form",
         page: "/contact.html",
       }),
