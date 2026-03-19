@@ -4,9 +4,9 @@ import { PageShell } from "../../siteContent";
 import { NAP } from "../../lib/business";
 
 export const metadata: Metadata = {
-  title: "Hurricane & Storm Boat Protection Guide | Mar Marina Florida",
+  title: "Hurricane Boat Protection Guide Tarpon Springs | Mar Marina",
   description:
-    "How marina storage can reduce storm risk, what to do before a storm, and how to prepare your boat. Mar Marina Tarpon Springs offers protected storage and haul-out.",
+    "Learn hurricane and storm boat protection steps for Tarpon Springs, including haul-out planning, secure storage, and marina readiness tips.",
   alternates: { canonical: "/guides/hurricane-storm-boat-protection" },
 };
 

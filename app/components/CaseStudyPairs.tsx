@@ -56,10 +56,10 @@ export function CaseStudyPairs() {
                   <figcaption>Before</figcaption>
                 </figure>
                 <figure>
-                  <div className="case-study-coming-soon" aria-label="After image coming soon">
-                    Coming Soon
+                  <div className="case-study-coming-soon" aria-label="New after images coming soon">
+                    New Images Coming Soon
                   </div>
-                  <figcaption>After (Coming Soon)</figcaption>
+                  <figcaption>After (New Images Coming Soon)</figcaption>
                 </figure>
               </div>
               <p>

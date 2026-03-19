@@ -13,7 +13,7 @@ import { TestimonialCards } from "./components/TestimonialCards";
 import { HOURS, NAP, SUMMARY_ONE_LINE, TRUST_FACTS } from "./lib/business";
 
 const BASE_DESCRIPTION =
-  "Full-service boat repair, storage, and marine maintenance in Tarpon Springs, Florida. Mar Marina handles inspections, painting, haul-out, and marina services with fast quote response.";
+  "Mar Marina provides boat repair, dry storage, wet slips, haul-out, and marine maintenance in Tarpon Springs, Florida with clear scheduling and quote support.";
 
 const BASE_KEYWORDS =
   "boat repair Tarpon Springs, boat storage Tarpon Springs, marine service Tarpon Springs, marina Tarpon Springs, boat maintenance Tarpon Springs, boat painting Tarpon Springs";
@@ -39,14 +39,14 @@ export function PageShell({
 }
 
 export const homeMetadata: Metadata = {
-  title: "Boat Repair & Storage Tarpon Springs | Mar Marina",
+  title: "Boat Repair & Marina Services Tarpon Springs | Mar Marina",
   description: BASE_DESCRIPTION,
   keywords: BASE_KEYWORDS,
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Boat Repair & Storage Tarpon Springs | Mar Marina",
+    title: "Boat Repair & Marina Services Tarpon Springs | Mar Marina",
     description: BASE_DESCRIPTION,
     url: "/",
     siteName: SITE_NAME,
@@ -55,24 +55,24 @@ export const homeMetadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Boat Repair & Storage Tarpon Springs | Mar Marina",
+    title: "Boat Repair & Marina Services Tarpon Springs | Mar Marina",
     description: BASE_DESCRIPTION,
     images: [OG_IMAGE],
   },
 };
 
 export const reviewsMetadata: Metadata = {
-  title: "Mar Marina Reviews",
+  title: "Boat Storage & Marina Reviews Tarpon Springs | Mar Marina",
   description:
-    "Mar Marina is a full-service, protected-harbor marina in Tarpon Springs, Florida, located at the end of the Anclote River and the Gulf Intracoastal Waterway.",
+    "Read Mar Marina reviews from Tarpon Springs boat owners about dry storage, wet slips, haul-out, and service quality at our protected marina location.",
   keywords: BASE_KEYWORDS,
   alternates: {
     canonical: "/wetslips.html",
   },
   openGraph: {
-    title: "Mar Marina Reviews",
+    title: "Boat Storage & Marina Reviews Tarpon Springs | Mar Marina",
     description:
-      "Mar Marina is a full-service, protected-harbor marina in Tarpon Springs, Florida, located at the end of the Anclote River and the Gulf Intracoastal Waterway.",
+      "Read Mar Marina reviews from Tarpon Springs boat owners about dry storage, wet slips, haul-out, and service quality at our protected marina location.",
     url: "/wetslips.html",
     siteName: SITE_NAME,
     type: "website",
@@ -80,23 +80,25 @@ export const reviewsMetadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mar Marina Reviews",
+    title: "Boat Storage & Marina Reviews Tarpon Springs | Mar Marina",
     description:
-      "Mar Marina is a full-service, protected-harbor marina in Tarpon Springs, Florida, located at the end of the Anclote River and the Gulf Intracoastal Waterway.",
+      "Read Mar Marina reviews from Tarpon Springs boat owners about dry storage, wet slips, haul-out, and service quality at our protected marina location.",
     images: [OG_IMAGE],
   },
 };
 
 export const servicesMetadata: Metadata = {
-  title: "Mar Marina Services",
-  description: BASE_DESCRIPTION,
+  title: "Dry Storage, Wet Slips & Repair | Mar Marina Tarpon Springs",
+  description:
+    "Explore Mar Marina services in Tarpon Springs: dry storage, wet slips, haul-out, repairs, and maintenance for local and seasonal boat owners.",
   keywords: BASE_KEYWORDS,
   alternates: {
     canonical: "/drystorage.html",
   },
   openGraph: {
-    title: "Mar Marina Services",
-    description: BASE_DESCRIPTION,
+    title: "Dry Storage, Wet Slips & Repair | Mar Marina Tarpon Springs",
+    description:
+      "Explore Mar Marina services in Tarpon Springs: dry storage, wet slips, haul-out, repairs, and maintenance for local and seasonal boat owners.",
     url: "/drystorage.html",
     siteName: SITE_NAME,
     type: "website",
@@ -104,22 +106,25 @@ export const servicesMetadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mar Marina Services",
-    description: BASE_DESCRIPTION,
+    title: "Dry Storage, Wet Slips & Repair | Mar Marina Tarpon Springs",
+    description:
+      "Explore Mar Marina services in Tarpon Springs: dry storage, wet slips, haul-out, repairs, and maintenance for local and seasonal boat owners.",
     images: [OG_IMAGE],
   },
 };
 
 export const galleryMetadata: Metadata = {
-  title: "Mar Marina Boatyard & Gallery",
-  description: BASE_DESCRIPTION,
+  title: "Boatyard & Marina Gallery in Tarpon Springs | Mar Marina",
+  description:
+    "View Mar Marina boatyard and marina photos in Tarpon Springs, including dry storage, dock areas, haul-out zones, and active service operations.",
   keywords: BASE_KEYWORDS,
   alternates: {
     canonical: "/boatyardgallery.html",
   },
   openGraph: {
-    title: "Mar Marina Boatyard & Gallery",
-    description: BASE_DESCRIPTION,
+    title: "Boatyard & Marina Gallery in Tarpon Springs | Mar Marina",
+    description:
+      "View Mar Marina boatyard and marina photos in Tarpon Springs, including dry storage, dock areas, haul-out zones, and active service operations.",
     url: "/boatyardgallery.html",
     siteName: SITE_NAME,
     type: "website",
@@ -127,22 +132,25 @@ export const galleryMetadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mar Marina Boatyard & Gallery",
-    description: BASE_DESCRIPTION,
+    title: "Boatyard & Marina Gallery in Tarpon Springs | Mar Marina",
+    description:
+      "View Mar Marina boatyard and marina photos in Tarpon Springs, including dry storage, dock areas, haul-out zones, and active service operations.",
     images: [OG_IMAGE],
   },
 };
 
 export const contactMetadata: Metadata = {
-  title: "Mar Marina Contact & Location",
-  description: BASE_DESCRIPTION,
+  title: "Contact Mar Marina for Boat Service in Tarpon Springs",
+  description:
+    "Contact Mar Marina in Tarpon Springs for boat repair, dry storage, wet slips, haul-out scheduling, and maintenance quotes from our local team.",
   keywords: BASE_KEYWORDS,
   alternates: {
     canonical: "/contact.html",
   },
   openGraph: {
-    title: "Mar Marina Contact & Location",
-    description: BASE_DESCRIPTION,
+    title: "Contact Mar Marina for Boat Service in Tarpon Springs",
+    description:
+      "Contact Mar Marina in Tarpon Springs for boat repair, dry storage, wet slips, haul-out scheduling, and maintenance quotes from our local team.",
     url: "/contact.html",
     siteName: SITE_NAME,
     type: "website",
@@ -150,8 +158,9 @@ export const contactMetadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mar Marina Contact & Location",
-    description: BASE_DESCRIPTION,
+    title: "Contact Mar Marina for Boat Service in Tarpon Springs",
+    description:
+      "Contact Mar Marina in Tarpon Springs for boat repair, dry storage, wet slips, haul-out scheduling, and maintenance quotes from our local team.",
     images: [OG_IMAGE],
   },
 };
@@ -402,7 +411,7 @@ export function HomeContent() {
             </article>
             <div className="map-card">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3517.4175021949045!2d-82.77631108440873!3d28.164215682604798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c28dac4a982a73%3A0x7f336f0742a01e7f!2s761+Anclote+Rd%2C+Tarpon+Springs%2C+FL+34689!5e0!3m2!1sen!2sus!4v1461526898761"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3517.4253864443795!2d-82.77759962332641!3d28.16397580520169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c28db253889fd5%3A0xe984d805d17c05a4!2sMar%20Marina!5e0!3m2!1sen!2sus!4v1773948690243!5m2!1sen!2sus"
                 width="100%"
                 height="360"
                 frameBorder="0"
@@ -442,6 +451,10 @@ export function ReviewsContent() {
               Selected quotes are lightly edited for readability while preserving each reviewer&apos;s
               intent.
             </p>
+            <p className="home-subhead">
+              Explore our <Link href="/drystorage.html">marina services in Tarpon Springs</Link> and{" "}
+              <Link href="/boatyardgallery.html">view service and storage photos</Link>.
+            </p>
           </div>
           <div className="home-quote-grid">
             <blockquote className="home-quote-card home-quote-card--light">
@@ -450,21 +463,21 @@ export function ReviewsContent() {
                 one day and saved me time and money. Their large-boat experience and parts support
                 were incredible.&rdquo;
               </p>
-              <footer>— Kevin F.</footer>
+              <footer>— Kevin F., Tarpon Springs crab boat owner</footer>
             </blockquote>
             <blockquote className="home-quote-card home-quote-card--light">
               <p>
                 &ldquo;Private and secure. Best place for long-term slip, storage, or out-of-water
                 repairs.&rdquo;
               </p>
-              <footer>— Rudy P.</footer>
+              <footer>— Rudy P., long-term storage customer</footer>
             </blockquote>
             <blockquote className="home-quote-card home-quote-card--light">
               <p>
                 &ldquo;Capt. Jean, Shane, and crew did an amazing job. Workmanship was excellent and
                 pricing was more than reasonable. Mar Marina is now my go-to boatyard.&rdquo;
               </p>
-              <footer>— Mike T.</footer>
+              <footer>— Mike T., local boatyard service customer</footer>
             </blockquote>
           </div>
 
@@ -559,12 +572,12 @@ export function ServicesContent() {
               and next steps without guesswork.
             </p>
             <div className="home-inline-cta">
-              <a href={`tel:${NAP.phoneTel}`} className="btn-hero btn-hero-primary">
-                Call Now
-              </a>
-              <Link href="/contact.html#quote" className="btn-hero btn-hero-outline btn-hero-outline--dark">
+              <Link href="/contact.html#quote" className="btn-hero btn-hero-primary">
                 Get a Quote
               </Link>
+              <a href={`tel:${NAP.phoneTel}`} className="btn-hero btn-hero-outline btn-hero-outline--dark">
+                Call Now
+              </a>
             </div>
           </div>
         </div>
@@ -695,10 +708,22 @@ export function ServicesContent() {
             <p><strong>{TRUST_FACTS.travelLiftCapacityTons} tons</strong> max haul capacity</p>
           </div>
           <div className="gallery-grid">
-            <img src="/img/first-small.jpg" alt="" />
-            <img src="/img/second-small.jpg" alt="" />
-            <img src="/img/third-small.jpg" alt="" />
-            <img src="/img/fourth-small.jpg" alt="" />
+            <figure className="gallery-item">
+              <img src="/img/first-small.jpg" alt="Dry storage area with boats positioned for scheduled access." />
+              <figcaption>Dry storage staging</figcaption>
+            </figure>
+            <figure className="gallery-item">
+              <img src="/img/second-small.jpg" alt="Protected basin with slip access and docked vessels." />
+              <figcaption>Slip and basin access</figcaption>
+            </figure>
+            <figure className="gallery-item">
+              <img src="/img/third-small.jpg" alt="Haul-out approach and working dock area at the marina." />
+              <figcaption>Haul-out approach zone</figcaption>
+            </figure>
+            <figure className="gallery-item">
+              <img src="/img/fourth-small.jpg" alt="Travel-lift area supporting launch and haul-out operations." />
+              <figcaption>Travel-lift operations</figcaption>
+            </figure>
           </div>
         </div>
       </section>
@@ -774,24 +799,64 @@ export function GalleryContent() {
               Protected location in Tarpon Springs with two 35-ton marine travel lifts and on-site
               crew support for haul-out and service work.
             </p>
+            <p className="home-subhead">
+              Need matching service support? See our <Link href="/drystorage.html">storage and repair services</Link>{" "}
+              or <Link href="/contact.html#quote">request a quote</Link>.
+            </p>
           </div>
         </div>
       </section>
 
       <section className="home-section gallery-page-grid">
         <div className="line gallery-grid">
-          <img src="/img/11.jpg" alt="" />
-          <img src="/img/6.jpg" alt="" />
-          <img src="/img/third-small.jpg" alt="" />
-          <img src="/img/14.jpg" alt="" />
-          <img src="/img/10.jpg" alt="" />
-          <img src="/img/12.jpg" alt="" />
-          <img src="/img/7.jpg" alt="" />
-          <img src="/img/9.jpg" alt="" />
-          <img src="/img/8.jpg" alt="" />
-          <img src="/img/second-small.jpg" alt="" />
-          <img src="/img/third-small.jpg" alt="" />
-          <img src="/img/fourth-small.jpg" alt="" />
+          <figure className="gallery-item">
+            <img src="/img/11.jpg" alt="Boat positioned in yard for scheduled maintenance work." />
+            <figcaption>Maintenance yard staging</figcaption>
+          </figure>
+          <figure className="gallery-item">
+            <img src="/img/6.jpg" alt="Vessel prepared for refinishing and detailing support." />
+            <figcaption>Refinishing prep</figcaption>
+          </figure>
+          <figure className="gallery-item">
+            <img src="/img/third-small.jpg" alt="Working dock area used for repair intake and planning." />
+            <figcaption>Repair intake dock</figcaption>
+          </figure>
+          <figure className="gallery-item">
+            <img src="/img/14.jpg" alt="Boatyard lane with active service movement and vessel handling." />
+            <figcaption>Active boatyard lane</figcaption>
+          </figure>
+          <figure className="gallery-item">
+            <img src="/img/10.jpg" alt="Boat after service cleanup and scheduled launch preparation." />
+            <figcaption>Post-service prep</figcaption>
+          </figure>
+          <figure className="gallery-item">
+            <img src="/img/12.jpg" alt="Travel-lift handling area used for haul-out and launch." />
+            <figcaption>Haul-out handling area</figcaption>
+          </figure>
+          <figure className="gallery-item">
+            <img src="/img/7.jpg" alt="Storage section showing organized vessel placement." />
+            <figcaption>Organized storage section</figcaption>
+          </figure>
+          <figure className="gallery-item">
+            <img src="/img/9.jpg" alt="Service-side dock with local marina operations underway." />
+            <figcaption>Service-side dock</figcaption>
+          </figure>
+          <figure className="gallery-item">
+            <img src="/img/8.jpg" alt="Vessel support area used for maintenance sequencing." />
+            <figcaption>Maintenance support area</figcaption>
+          </figure>
+          <figure className="gallery-item">
+            <img src="/img/second-small.jpg" alt="Protected basin access near slip assignments." />
+            <figcaption>Protected basin access</figcaption>
+          </figure>
+          <figure className="gallery-item">
+            <img src="/img/third-small.jpg" alt="Working waterfront access for scheduled service arrivals." />
+            <figcaption>Service arrival access</figcaption>
+          </figure>
+          <figure className="gallery-item">
+            <img src="/img/fourth-small.jpg" alt="Lift-side zone supporting launch and haul-out transitions." />
+            <figcaption>Lift-side transition zone</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -973,7 +1038,7 @@ export function ContactContent() {
           </div>
           <div className="map-card">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3517.4175021949045!2d-82.77631108440873!3d28.164215682604798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c28dac4a982a73%3A0x7f336f0742a01e7f!2s761+Anclote+Rd%2C+Tarpon+Springs%2C+FL+34689!5e0!3m2!1sen!2sus!4v1461526898761"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3517.4253864443795!2d-82.77759962332641!3d28.16397580520169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c28db253889fd5%3A0xe984d805d17c05a4!2sMar%20Marina!5e0!3m2!1sen!2sus!4v1773948690243!5m2!1sen!2sus"
               width="100%"
               height="450"
               frameBorder="0"

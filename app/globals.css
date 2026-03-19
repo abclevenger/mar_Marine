@@ -1094,6 +1094,11 @@ textarea:focus-visible {
   color: var(--brand-cyan-soft);
 }
 
+.testimonial-context {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .home-testimonials-more {
   text-align: center;
   margin: 20px 0 0;
@@ -1448,6 +1453,10 @@ textarea:focus-visible {
   }
 
   .home-trust-strip-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .launch-addons-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -1850,6 +1859,15 @@ textarea:focus-visible {
   font-size: 16px;
 }
 
+.contact-form input:focus-visible,
+.contact-form select:focus-visible,
+.contact-form textarea:focus-visible {
+  outline: 2px solid rgba(12, 116, 163, 0.35);
+  outline-offset: 1px;
+  border-color: #6ea3c2;
+  background: #fff;
+}
+
 .contact-form textarea {
   resize: vertical;
   min-height: 140px;
@@ -1961,6 +1979,70 @@ textarea:focus-visible {
   background: var(--brand-cyan-soft);
   transform: translateY(-1px);
   box-shadow: 0 8px 22px rgba(54, 198, 223, 0.32);
+}
+
+.contact-form button:focus-visible {
+  outline: 2px solid rgba(12, 116, 163, 0.4);
+  outline-offset: 2px;
+}
+
+.launch-form-section {
+  margin: 0;
+  padding: 14px 14px 12px;
+  border: 1px solid #d4e2eb;
+  border-radius: var(--radius-sm);
+  background: #f9fcff;
+}
+
+.launch-form-section legend {
+  padding: 0 6px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #29485d;
+}
+
+.launch-form-section ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.launch-form-section li {
+  color: var(--text-muted);
+  margin-bottom: 6px;
+  line-height: 1.45;
+}
+
+.launch-addons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.launch-addon-item {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.launch-addon-item input[type="checkbox"] {
+  margin-top: 2px;
+}
+
+.field-error {
+  margin: -6px 0 2px;
+  color: #8d1f1f;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.input-error {
+  border-color: #c05a5a !important;
+  background: #fff7f7 !important;
 }
 
 .contact-form button[disabled] {

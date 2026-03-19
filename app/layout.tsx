@@ -16,9 +16,9 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://mar-marina.org"),
   applicationName: "Mar Marina",
-  title: "Mar Marina in Tarpon Springs, Florida",
+  title: "Tarpon Springs Marina Services | Mar Marina Florida",
   description:
-    "Mar Marina is a full-service, protected-harbor marina located at the end of the Anclote River and the Gulf Intracoastal Waterway in Tarpon Springs, Florida.",
+    "Mar Marina offers boat repair, dry storage, wet slips, and haul-out services in Tarpon Springs, Florida near the Anclote River and Gulf Intracoastal.",
   keywords:
     "Tarpon Springs, Florida, marina, full service, intracoastal waterway, protected harbor, Gulf, Anclote River, dry dock, wet slips, boat yard",
   openGraph: {
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://mar-marina.org/",
     siteName: "Mar Marina",
-    title: "Mar Marina in Tarpon Springs, Florida",
+    title: "Tarpon Springs Marina Services | Mar Marina Florida",
     description:
-      "Mar Marina is a full-service, protected-harbor marina located at the end of the Anclote River and the Gulf Intracoastal Waterway in Tarpon Springs, Florida.",
+      "Mar Marina offers boat repair, dry storage, wet slips, and haul-out services in Tarpon Springs, Florida near the Anclote River and Gulf Intracoastal.",
     images: [
       {
         url: "/img/first.jpg",
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mar Marina in Tarpon Springs, Florida",
+    title: "Tarpon Springs Marina Services | Mar Marina Florida",
     description:
-      "Mar Marina is a full-service, protected-harbor marina located at the end of the Anclote River and the Gulf Intracoastal Waterway in Tarpon Springs, Florida.",
+      "Mar Marina offers boat repair, dry storage, wet slips, and haul-out services in Tarpon Springs, Florida near the Anclote River and Gulf Intracoastal.",
     images: ["/img/first.jpg"],
   },
   robots: {

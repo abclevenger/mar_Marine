@@ -1,7 +1,9 @@
 const FOOTER_NAV = [
   { href: "/", label: "Home" },
   { href: "/blogs", label: "Blog" },
+  { href: "/boat-launch-request", label: "Launch Request" },
   { href: "/wetslips.html", label: "Reviews" },
+  { href: "/wetslips.html", label: "Leave a Review" },
   { href: "/drystorage.html", label: "Services" },
   { href: "/boatyardgallery.html", label: "Gallery" },
   { href: "/contact.html", label: "Contact" },
@@ -49,7 +51,7 @@ export function GlobalFooter() {
             <p className="global-footer-col-title">Explore</p>
             <ul>
               {FOOTER_NAV.map((item) => (
-                <li key={item.href}>
+                <li key={`${item.href}-${item.label}`}>
                   <a href={item.href}>{item.label}</a>
                 </li>
               ))}

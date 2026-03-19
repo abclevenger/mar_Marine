@@ -4,9 +4,9 @@ import { PageShell } from "../../siteContent";
 import { NAP, SUMMARY_ONE_LINE } from "../../lib/business";
 
 export const metadata: Metadata = {
-  title: "Tarpon Springs Marina Guide | Mar Marina",
+  title: "Tarpon Springs Marina Services Guide | Mar Marina",
   description:
-    "A guide to boating and marina options in Tarpon Springs, Florida: docking, storage, haul-out, and why boat owners choose the Anclote River and Gulf coast.",
+    "Explore Tarpon Springs marina services, storage options, haul-out access, and local boating factors for Gulf Coast boat owners.",
   alternates: { canonical: "/guides/tarpon-springs-marina" },
 };
 

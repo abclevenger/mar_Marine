@@ -4,9 +4,9 @@ import { PageShell } from "../../siteContent";
 import { NAP, SUMMARY_ONE_LINE } from "../../lib/business";
 
 export const metadata: Metadata = {
-  title: "Choosing a Marina in Tarpon Springs | Mar Marina",
+  title: "Choosing a Marina in Tarpon Springs FL | Mar Marina",
   description:
-    "What to compare when choosing a marina: storage type, security, haul-out capability, location, and reputation. A practical framework for Tarpon Springs boat owners.",
+    "Learn how to choose a Tarpon Springs marina by comparing storage options, security, haul-out capability, and service reputation.",
   alternates: { canonical: "/guides/choosing-a-marina-tarpon-springs" },
 };
 

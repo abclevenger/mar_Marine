@@ -11,13 +11,11 @@ export function HomeHero() {
       <div className="home-hero-overlay" aria-hidden="false">
         <div className="line home-hero-inner">
           <div className="home-hero-copy">
-            <p className="home-hero-eyebrow">Tarpon Springs, FL · Anclote River</p>
             <h1 className="home-hero-title">
               Full-Service Boat Repair &amp; Storage in Tarpon Springs
             </h1>
             <p className="home-hero-lead">
-              Reliable marine repair, maintenance, painting, and storage with experienced service,
-              fast turnaround, and easy quote requests.
+              Local marine repair, maintenance, painting, and storage with clear scheduling and fast quote response.
             </p>
             <div className="home-hero-cta-row">
               <Link href="/contact.html#quote" className="btn-hero btn-hero-primary">

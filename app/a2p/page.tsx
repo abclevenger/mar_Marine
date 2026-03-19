@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { PageShell } from "../siteContent";
 
 export const metadata: Metadata = {
-  title: "A2P Messaging | Mar Marina",
-  description: "Mar Marina A2P (Application-to-Person) messaging terms and compliance information.",
+  title: "A2P Messaging Policy | Mar Marina Tarpon Springs",
+  description:
+    "Read Mar Marina A2P messaging policy, consent terms, and SMS compliance details for Tarpon Springs marina communications.",
   alternates: { canonical: "/a2p" },
 };
 

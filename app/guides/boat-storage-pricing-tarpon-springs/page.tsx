@@ -4,9 +4,9 @@ import { PageShell } from "../../siteContent";
 import { NAP } from "../../lib/business";
 
 export const metadata: Metadata = {
-  title: "Boat Storage Pricing Guide – Tarpon Springs | Mar Marina",
+  title: "Boat Storage Pricing Tarpon Springs Guide | Mar Marina",
   description:
-    "What affects boat storage cost in Tarpon Springs: wet vs dry, size, season, access, and service level. Get a Quote for your boat.",
+    "Understand Tarpon Springs boat storage pricing by slip type, vessel size, season, and service level to plan costs with confidence.",
   alternates: { canonical: "/guides/boat-storage-pricing-tarpon-springs" },
 };
 

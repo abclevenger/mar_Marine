@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { PageShell } from "../siteContent";
 
 export const metadata: Metadata = {
-  title: "Terms and Conditions | Mar Marina",
-  description: "Terms and conditions of use for Mar Marina website and services.",
+  title: "Terms and Conditions | Mar Marina Tarpon Springs FL",
+  description:
+    "Review Mar Marina terms and conditions for marina services, storage, and website use in Tarpon Springs, Florida.",
   alternates: { canonical: "/terms" },
 };
 

@@ -47,6 +47,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.65,
       lastModified: LAST_MODIFIED,
     },
+    {
+      url: `${BASE_URL}/boat-launch-request`,
+      changeFrequency: "weekly",
+      priority: 0.7,
+      lastModified: LAST_MODIFIED,
+    },
     { url: `${BASE_URL}/guides/tarpon-springs-marina`, changeFrequency: "monthly", priority: 0.6, lastModified: LAST_MODIFIED },
     { url: `${BASE_URL}/guides/boat-storage-pricing-tarpon-springs`, changeFrequency: "monthly", priority: 0.6, lastModified: LAST_MODIFIED },
     { url: `${BASE_URL}/guides/dry-storage-vs-wet-slips`, changeFrequency: "monthly", priority: 0.6, lastModified: LAST_MODIFIED },

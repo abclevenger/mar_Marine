@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { PageShell } from "../siteContent";
 
 export const metadata: Metadata = {
-  title: "Accessibility | Mar Marina",
-  description: "Mar Marina commitment to digital accessibility and how we support all users.",
+  title: "Accessibility Statement | Mar Marina Tarpon Springs",
+  description:
+    "Learn how Mar Marina supports web accessibility for boat owners and visitors using our Tarpon Springs marina website.",
   alternates: { canonical: "/accessibility" },
 };
 

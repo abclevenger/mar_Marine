@@ -4,9 +4,9 @@ import { PageShell } from "../../siteContent";
 import { NAP } from "../../lib/business";
 
 export const metadata: Metadata = {
-  title: "Dry Storage vs Wet Slips | Mar Marina Tarpon Springs",
+  title: "Dry Storage vs Wet Slips in Tarpon Springs | Mar Marina",
   description:
-    "Compare dry storage and wet slips: pros, cons, maintenance, storm exposure, and who each option is best for. Mar Marina offers both in Tarpon Springs.",
+    "Compare dry storage and wet slips in Tarpon Springs, including maintenance, storm exposure, and best-fit use cases for Florida boat owners.",
   alternates: { canonical: "/guides/dry-storage-vs-wet-slips" },
 };
 

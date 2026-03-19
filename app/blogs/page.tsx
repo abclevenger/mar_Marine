@@ -37,7 +37,7 @@ const POSTS = [
 ] as const;
 
 export const metadata: Metadata = {
-  title: "Marine Service Blog | Mar Marina Tarpon Springs",
+  title: "Boat Repair & Marina Blog Tarpon Springs | Mar Marina",
   description:
     "Read Mar Marina blog guides on boat repair, storage, maintenance, and marina planning in Tarpon Springs, Florida.",
   keywords:
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     canonical: "/blogs",
   },
   openGraph: {
-    title: "Marine Service Blog | Mar Marina Tarpon Springs",
+    title: "Boat Repair & Marina Blog Tarpon Springs | Mar Marina",
     description:
       "Local blog guides for boat repair, storage, marina planning, and maintenance in Tarpon Springs.",
     url: "/blogs",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Marine Service Blog | Mar Marina Tarpon Springs",
+    title: "Boat Repair & Marina Blog Tarpon Springs | Mar Marina",
     description:
       "Local blog guides for boat repair, storage, marina planning, and maintenance in Tarpon Springs.",
     images: ["/img/first.jpg"],

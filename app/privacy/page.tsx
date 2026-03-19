@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { PageShell } from "../siteContent";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Mar Marina",
-  description: "Privacy policy for Mar Marina. How we collect, use, and protect your information.",
+  title: "Privacy Policy | Mar Marina Tarpon Springs Florida",
+  description:
+    "Read the Mar Marina privacy policy for Tarpon Springs marina services, including how we collect, use, and protect customer information.",
   alternates: { canonical: "/privacy" },
 };
 
