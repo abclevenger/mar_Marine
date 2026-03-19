@@ -1099,6 +1099,19 @@ textarea:focus-visible {
   color: rgba(255, 255, 255, 0.8);
 }
 
+/* Keep readable contrast for light testimonial cards. */
+.home-quote-card--light p {
+  color: var(--text-muted);
+}
+
+.home-quote-card--light footer {
+  color: var(--brand-dark-2);
+}
+
+.home-quote-card--light .testimonial-context {
+  color: #557489;
+}
+
 .home-testimonials-more {
   text-align: center;
   margin: 20px 0 0;
