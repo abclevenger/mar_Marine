@@ -6,6 +6,14 @@ const FOOTER_NAV = [
   { href: "/contact.html", label: "Location / Contact" },
 ];
 
+const FOOTER_GUIDES = [
+  { href: "/guides/tarpon-springs-marina", label: "Marina Guide" },
+  { href: "/guides/dry-storage-vs-wet-slips", label: "Dry vs Wet Slips" },
+  { href: "/guides/boat-storage-pricing-tarpon-springs", label: "Pricing Guide" },
+  { href: "/guides/hurricane-storm-boat-protection", label: "Storm Guide" },
+  { href: "/guides/choosing-a-marina-tarpon-springs", label: "Choosing a Marina" },
+];
+
 const FOOTER_LEGAL = [
   { href: "/privacy", label: "Privacy" },
   { href: "/terms", label: "Terms & Conditions" },
@@ -42,6 +50,15 @@ export function GlobalFooter() {
             <a href={`mailto:${MARINA_EMAIL}`}>{MARINA_EMAIL}</a>
           </p>
         </div>
+        <nav className="global-footer-guides" aria-label="Guides and resources">
+          <ul>
+            {FOOTER_GUIDES.map((item) => (
+              <li key={item.href}>
+                <a href={item.href}>{item.label}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
         <nav className="global-footer-legal" aria-label="Legal and policies">
           <ul>
             {FOOTER_LEGAL.map((item) => (

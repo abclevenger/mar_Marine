@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import Link from "next/link";
 import Script from "next/script";
 import { ContactForm } from "./components/ContactForm";
+import { ConversionCTA } from "./components/ConversionCTA";
 import { HeroSlideshow } from "./components/HeroSlideshow";
+import { VimeoClickToPlay } from "./components/VimeoClickToPlay";
+import { NAP, SUMMARY_ONE_LINE, TRUST_FACTS } from "./lib/business";
 
 type NavItem = {
   href: string;
@@ -268,7 +272,7 @@ export function HomeContent() {
         name: "What types of storage does MAR-MARINA offer?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "As a full service marina, we offer wet and dry storage in a secure marina.",
+          text: "MAR-MARINA offers wet slips and dry storage in Tarpon Springs, Florida. Dry storage for boats up to 55' x 20'; rack storage for boats up to 28' with forklift in-out. Wet slips for boats up to 75' x 20' with 7' draft.",
         },
       },
       {
@@ -276,7 +280,7 @@ export function HomeContent() {
         name: "How large of a boat can you haul?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "We have the ability to haul boats up to 35 tons making our marina a one-stop shop for any boater needing world-class support and customer service.",
+          text: "MAR-MARINA can haul boats up to 35 tons. We have two 35-ton marine travel lifts at our Tarpon Springs location at the end of the Anclote River.",
         },
       },
       {
@@ -284,7 +288,7 @@ export function HomeContent() {
         name: "Is the marina secure?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Boat security is very important to all boat owners who trust their property to a marina either on a slip or dry-storage. At MAR-MARINA we take pride in our 24/7 security systems with our remote control main door system and man-surveillance overnight services.",
+          text: "Yes. MAR-MARINA has a locked gate, 24-hour on-site security, remote control main door, and overnight surveillance. The marina is in a protected location at the end of the Anclote River in Tarpon Springs, Florida.",
         },
       },
       {
@@ -292,7 +296,7 @@ export function HomeContent() {
         name: "Where is MAR-MARINA located?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "MAR-MARINA is located at 761 Anclote Rd., Tarpon Springs, FL 34689.",
+          text: "MAR-MARINA is located at 761 Anclote Rd., Tarpon Springs, FL 34689, at the end of the Anclote River and intracoastal waterway of the Gulf.",
         },
       },
       {
@@ -300,7 +304,7 @@ export function HomeContent() {
         name: "How can I get an estimate?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "With location and services we consider outstanding our prices are more than reasonable. Call or email us for an estimate.",
+          text: "Call (727) 939-1589 or email info@mar-marina.com for pricing and availability. We offer daily, weekly, and monthly rates for dry storage and wet slips.",
         },
       },
     ],
@@ -317,15 +321,32 @@ export function HomeContent() {
       <HeroSlideshow />
 
       <section className="first-block">
-        <iframe
-          src="https://player.vimeo.com/video/770544383?h=3b0cfe2ebf"
-          width={450}
-          height={253}
-          loading="lazy"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowFullScreen
-          title="Mar-Marina video"
-        />
+        <VimeoClickToPlay />
+      </section>
+
+      <section className="first-block">
+        <div className="line authority-block">
+          <h2>About MAR-MARINA in Tarpon Springs</h2>
+          <p>{SUMMARY_ONE_LINE}</p>
+          <ul>
+            <li>Wet slips and dry storage in Tarpon Springs, Florida, at the end of the Anclote River.</li>
+            <li>Haul-out and launch up to 35 tons with two 35-ton marine travel lifts.</li>
+            <li>Rack storage for boats up to 28&apos;; dry storage for boats up to 55&apos; x 20&apos;.</li>
+            <li>Secure marina: locked gate, 24-hour on-site security, remote control main door, overnight surveillance.</li>
+            <li>Over {TRUST_FACTS.yearsExperience} years serving boat owners; management crew with {TRUST_FACTS.managementExperienceCombined} years combined experience.</li>
+          </ul>
+          <p className="authority-links">
+            <Link href="/drystorage.html">Services &amp; storage</Link>
+            {" · "}
+            <Link href="/boatyardgallery.html">Boatyard &amp; haul-out</Link>
+            {" · "}
+            <Link href="/guides/tarpon-springs-marina">Tarpon Springs marina guide</Link>
+            {" · "}
+            <Link href="/guides/choosing-a-marina-tarpon-springs">Choosing a marina</Link>
+            {" · "}
+            <Link href="/contact.html">Contact &amp; quote</Link>
+          </p>
+        </div>
       </section>
 
       <section className="first-block">
@@ -397,10 +418,10 @@ export function HomeContent() {
           <h2 className="section-title">MAR-MARINA LIFT &amp; BOAT REPAIR</h2>
           <p className="subtitile">Any job large or small in a timely fashion</p>
           <div className="gallery-grid">
-            <img src="/img/first-small.jpg" alt="alternative text" />
-            <img src="/img/second-small.jpg" alt="alternative text" />
-            <img src="/img/third-small.jpg" alt="alternative text" />
-            <img src="/img/fourth-small.jpg" alt="alternative text" />
+            <img src="/img/first-small.jpg" alt="" />
+            <img src="/img/second-small.jpg" alt="" />
+            <img src="/img/third-small.jpg" alt="" />
+            <img src="/img/fourth-small.jpg" alt="" />
           </div>
         </div>
       </section>
@@ -488,6 +509,10 @@ export function HomeContent() {
           </div>
         </div>
       </section>
+
+      <div className="line">
+        <ConversionCTA variant="contact" />
+      </div>
     </>
   );
 }
@@ -592,13 +617,30 @@ export function ReviewsContent() {
       </section>
 
       {sharedTestimonials}
+
+      <div className="line">
+        <ConversionCTA variant="quote" />
+      </div>
     </>
   );
 }
 
+const servicesFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "Do you offer dry storage in Tarpon Springs?", acceptedAnswer: { "@type": "Answer", text: "Yes. MAR-MARINA offers dry storage in Tarpon Springs for boats up to 55' long x 20' wide, with daily, weekly, and monthly rates. We also offer rack storage for boats up to 28' with forklift in-out." } },
+    { "@type": "Question", name: "Do you provide wet slips?", acceptedAnswer: { "@type": "Answer", text: "Yes. Our wet slips accommodate boats up to 75' long x 20' wide with a 7' draft. We have new docks, new plumbing, and 30, 50, and 100 amp power." } },
+    { "@type": "Question", name: "What size boats can you haul out?", acceptedAnswer: { "@type": "Answer", text: "We can haul boats up to 35 tons. We have two 35-ton marine travel lifts at our Tarpon Springs location." } },
+    { "@type": "Question", name: "Do you offer boat repair or maintenance support?", acceptedAnswer: { "@type": "Answer", text: "Yes. We have mechanics, detailing, and painting professionals on site. We offer repairs, waxing and buffing, and gelcoat restoration. All boatyard work is done by our crew or trusted vendors." } },
+    { "@type": "Question", name: "How do I request pricing?", acceptedAnswer: { "@type": "Answer", text: "Call (727) 939-1589 or email info@mar-marina.com for current pricing and availability. You can also send a message via our contact page." } },
+  ],
+};
+
 export function ServicesContent() {
   return (
     <>
+      <Script id="faq-schema-services" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesFaqSchema) }} />
       <section className="content-page-head">
         <div className="line">
           <h1>SERVICES</h1>
@@ -678,6 +720,45 @@ export function ServicesContent() {
       </section>
 
       {sharedTestimonials}
+
+      <section className="first-block">
+        <div className="line">
+          <h2 className="section-title">Frequently asked questions about our services</h2>
+          <div className="faq-list">
+            <details>
+              <summary>Do you offer dry storage in Tarpon Springs?</summary>
+              <p>Yes. MAR-MARINA offers dry storage in Tarpon Springs for boats up to 55&apos; long x 20&apos; wide, with daily, weekly, and monthly rates. We also offer rack storage for boats up to 28&apos; with forklift in-out.</p>
+            </details>
+            <details>
+              <summary>Do you provide wet slips?</summary>
+              <p>Yes. Our wet slips accommodate boats up to 75&apos; long x 20&apos; wide with a 7&apos; draft. We have new docks, new plumbing, and 30, 50, and 100 amp power.</p>
+            </details>
+            <details>
+              <summary>What size boats can you haul out?</summary>
+              <p>We can haul boats up to 35 tons. We have two 35-ton marine travel lifts at our Tarpon Springs location.</p>
+            </details>
+            <details>
+              <summary>Do you offer boat repair or maintenance support?</summary>
+              <p>Yes. We have mechanics, detailing, and painting professionals on site. We offer repairs, waxing and buffing, and gelcoat restoration. All boatyard work is done by our crew or trusted vendors.</p>
+            </details>
+            <details>
+              <summary>How do I request pricing?</summary>
+              <p>Call us at <a href={`tel:${NAP.phoneTel}`}>{NAP.phone}</a> or <a href="mailto:info@mar-marina.com">email</a> for current pricing and availability. You can also <Link href="/contact.html">send a message</Link> or read our <Link href="/guides/boat-storage-pricing-tarpon-springs">boat storage pricing guide</Link> for what affects cost.</p>
+            </details>
+          </div>
+          <p className="authority-links" style={{ marginTop: "16px" }}>
+            <Link href="/guides/dry-storage-vs-wet-slips">Dry storage vs wet slips</Link>
+            {" · "}
+            <Link href="/guides/boat-storage-pricing-tarpon-springs">Pricing guide</Link>
+            {" · "}
+            <Link href="/contact.html">Request a quote</Link>
+          </p>
+        </div>
+      </section>
+
+      <div className="line">
+        <ConversionCTA variant="quote" />
+      </div>
     </>
   );
 }
@@ -744,6 +825,9 @@ export function GalleryContent() {
           </div>
         </div>
       </div>
+      <div className="line">
+        <ConversionCTA variant="quote" />
+      </div>
     </>
   );
 }
@@ -768,7 +852,7 @@ export function ContactContent() {
               <br />
               <a href="tel:+17279391589">(727) 939-1589</a>
               <br />
-              email: <a href="mailto:shane.struthers@hotmail.com">info@mar-marina.com</a>
+              email: <a href="mailto:info@mar-marina.com">info@mar-marina.com</a>
             </address>
             <p className="quick-actions">
               <a className="quick-action" href="tel:+17279391589">
@@ -793,6 +877,7 @@ export function ContactContent() {
           <div>
             <h2>Your request here about your boat</h2>
             <ContactForm />
+            <ConversionCTA variant="contact" className="cta-after-form" />
           </div>
         </div>
       </section>
