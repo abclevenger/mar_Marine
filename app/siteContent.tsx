@@ -122,22 +122,6 @@ export function SiteHeader({ currentPath }: { currentPath: string }) {
   );
 }
 
-export function SiteFooter() {
-  return (
-    <footer>
-      <div className="line footer-row">
-        <p>
-          Copyright 2025, Developed by:{" "}
-          <a href="http://www.dimitriscreative.com/" target="_blank" rel="noreferrer">
-            dimitriscreative
-          </a>
-        </p>
-        <p>&nbsp;</p>
-      </div>
-    </footer>
-  );
-}
-
 export function PageShell({
   children,
   currentPath,
@@ -152,7 +136,6 @@ export function PageShell({
       </a>
       <SiteHeader currentPath={currentPath} />
       <main id="main-content">{children}</main>
-      <SiteFooter />
     </div>
   );
 }

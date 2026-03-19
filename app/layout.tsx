@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
+import { GlobalFooter } from "./components/GlobalFooter";
 import "./globals.css";
 
 const openSans = Open_Sans({
@@ -75,7 +76,7 @@ export default function RootLayout({
 
   return (
     <html lang="en-US" className={`${openSans.variable} antialiased`}>
-      <body>
+      <body className="layout-body">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
@@ -84,7 +85,10 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
-        {children}
+        <div className="layout-wrap">
+          <div className="layout-main">{children}</div>
+          <GlobalFooter />
+        </div>
       </body>
     </html>
   );

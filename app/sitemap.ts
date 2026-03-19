@@ -41,5 +41,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
       lastModified: LAST_MODIFIED,
     },
+    { url: `${BASE_URL}/privacy`, changeFrequency: "yearly", priority: 0.4, lastModified: LAST_MODIFIED },
+    { url: `${BASE_URL}/terms`, changeFrequency: "yearly", priority: 0.4, lastModified: LAST_MODIFIED },
+    { url: `${BASE_URL}/accessibility`, changeFrequency: "yearly", priority: 0.4, lastModified: LAST_MODIFIED },
+    { url: `${BASE_URL}/a2p`, changeFrequency: "yearly", priority: 0.4, lastModified: LAST_MODIFIED },
   ];
 }
