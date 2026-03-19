@@ -2,8 +2,8 @@ const FOOTER_NAV = [
   { href: "/", label: "Home" },
   { href: "/wetslips.html", label: "Reviews" },
   { href: "/drystorage.html", label: "Services" },
-  { href: "/boatyardgallery.html", label: "Boatyard / Gallery" },
-  { href: "/contact.html", label: "Location / Contact" },
+  { href: "/boatyardgallery.html", label: "Gallery" },
+  { href: "/contact.html", label: "Contact" },
 ];
 
 const FOOTER_GUIDES = [
@@ -36,7 +36,7 @@ export function GlobalFooter() {
           </p>
           <a
             className="global-footer-fb"
-            href="https://www.facebook.com/MarMarina1234/?skip_nax_wizard=true"
+            href="https://www.facebook.com/MarMarina1234/?utm_source=chatgpt.com"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -81,7 +81,7 @@ export function GlobalFooter() {
             </address>
             <p className="global-footer-cta">
               <a href="/contact.html#quote" className="global-footer-cta-btn">
-                Request a quote
+                Request a Quote
               </a>
             </p>
           </div>
@@ -97,7 +97,12 @@ export function GlobalFooter() {
             ))}
           </ul>
         </nav>
-        <p className="global-footer-copy">© 2026 MAR-MARINA. All rights reserved.</p>
+        <p className="global-footer-copy">
+          © 2026 MAR-MARINA. All rights reserved. |{" "}
+          <a href="https://ymbs.pro" target="_blank" rel="noopener noreferrer">
+            ymbs.pro
+          </a>
+        </p>
       </div>
     </footer>
   );

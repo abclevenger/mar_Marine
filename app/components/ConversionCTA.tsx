@@ -10,10 +10,10 @@ export function ConversionCTA({ variant = "default", className = "" }: Props) {
   if (variant === "quote") {
     return (
       <div className={`cta-block ${className}`}>
-        <p className="cta-heading">Get a quote for storage or service</p>
+        <p className="cta-heading">Request a Quote for Storage or Service</p>
         <p>
           <Link href="/contact.html" className="quick-action">
-            Request a quote
+            Request a Quote
           </Link>
           {" · "}
           <a href={`tel:${NAP.phoneTel}`} className="cta-link">{NAP.phone}</a>
@@ -29,9 +29,9 @@ export function ConversionCTA({ variant = "default", className = "" }: Props) {
       <div className={`cta-block ${className}`}>
         <p className="cta-heading">Contact MAR-MARINA</p>
         <p>
-          <a href={`tel:${NAP.phoneTel}`} className="quick-action">Call {NAP.phone}</a>
+          <a href={`tel:${NAP.phoneTel}`} className="quick-action">Call Now</a>
           {" · "}
-          <Link href="/contact.html" className="cta-link">Send a message</Link>
+          <Link href="/contact.html" className="cta-link">Contact Us</Link>
         </p>
       </div>
     );
@@ -40,9 +40,9 @@ export function ConversionCTA({ variant = "default", className = "" }: Props) {
   return (
     <div className={`cta-block ${className}`}>
       <p>
-        <a href={`tel:${NAP.phoneTel}`} className="quick-action">Call the marina</a>
+        <a href={`tel:${NAP.phoneTel}`} className="quick-action">Call Now</a>
         {" · "}
-        <Link href="/contact.html" className="cta-link">Contact us</Link>
+        <Link href="/contact.html" className="cta-link">Contact Us</Link>
       </p>
     </div>
   );

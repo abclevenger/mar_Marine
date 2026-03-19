@@ -56,7 +56,7 @@ export default function TarponSpringsMarinaGuidePage() {
 
         <p className="guide-cta">
           <Link href="/contact.html" className="quick-action">
-            Request a quote or contact us
+            Request a Quote
           </Link>
         </p>
       </article>

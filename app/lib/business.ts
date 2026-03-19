@@ -6,7 +6,7 @@
 export const BUSINESS = {
   name: "MAR-MARINA",
   legalName: "MAR-MARINA",
-  tagline: "Full service protected harbor marina at the end of Anclote River and intracoastal waterway of the Gulf in Tarpon Springs, Florida.",
+  tagline: "Full-service, protected-harbor marina at the end of the Anclote River and the Gulf Intracoastal Waterway in Tarpon Springs, Florida.",
 } as const;
 
 export const NAP = {
@@ -45,6 +45,11 @@ export const TRUST_FACTS = {
   travelLifts: 2,
   travelLiftCapacityTons: 35,
   security: "Locked gate, 24-hour on-site security, remote control main door, overnight surveillance.",
+} as const;
+
+export const HOURS = {
+  office: "Call for current office hours",
+  yard: "Call for haul-out and yard scheduling windows",
 } as const;
 
 export const SITE_URL = "https://mar-marina.org";

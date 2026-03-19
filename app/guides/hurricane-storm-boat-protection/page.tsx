@@ -56,7 +56,7 @@ export default function HurricaneStormBoatProtectionPage() {
 
         <p className="guide-cta">
           <Link href="/contact.html" className="quick-action">
-            Contact us about storage or haul-out
+            Request a Quote
           </Link>
         </p>
       </article>

@@ -16,7 +16,7 @@ export function VimeoClickToPlay() {
           type="button"
           className="vimeo-placeholder"
           onClick={() => setPlayed(true)}
-          aria-label="Play Mar-Marina video"
+          aria-label="Play MAR-MARINA video"
         >
           <span className="vimeo-play-icon" aria-hidden="true">
             ▶
@@ -30,7 +30,7 @@ export function VimeoClickToPlay() {
           height={HEIGHT}
           allow="autoplay; fullscreen; picture-in-picture"
           allowFullScreen
-          title="Mar-Marina video"
+          title="MAR-MARINA video"
         />
       )}
     </div>

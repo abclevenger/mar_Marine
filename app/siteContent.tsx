@@ -7,46 +7,15 @@ import { ConversionCTA } from "./components/ConversionCTA";
 import { HomeHero } from "./components/HomeHero";
 import { SiteHeaderNav } from "./components/SiteHeaderNav";
 import { VimeoClickToPlay } from "./components/VimeoClickToPlay";
-import { NAP, SUMMARY_ONE_LINE, TRUST_FACTS } from "./lib/business";
+import { HOURS, NAP, SUMMARY_ONE_LINE, TRUST_FACTS } from "./lib/business";
 
 const BASE_DESCRIPTION =
-  "Mar-Marina is a full service protected harbor marina located at the end of Anclote River and intracoastal waterway of the Gulf in Tarpon Springs Florida.";
+  "MAR-MARINA is a full-service, protected-harbor marina located at the end of the Anclote River and the Gulf Intracoastal Waterway in Tarpon Springs, Florida.";
 
 const BASE_KEYWORDS =
-  "Tarpon Springs, Florida, marina, full service, intracoastal waterway, protected harbor, Gulf, anclote river, dry dock, wet slips, boat yard";
+  "Tarpon Springs, Florida, marina, full service, intracoastal waterway, protected harbor, Gulf, Anclote River, dry dock, wet slips, boat yard";
 const SITE_NAME = "MAR-MARINA";
 const OG_IMAGE = "/img/first.jpg";
-
-const sharedTestimonials = (
-  <div className="testimonial-block">
-    <div className="line testimonial-items">
-      <div>
-        <h2>For your peace of mind</h2>
-        <p>
-          Boat security is very important to all boat owners who trust their
-          property to a marina either on a slip or dry-storage. At MAR-MARINA
-          we take pride in our 24/7 security systems with our remote control
-          main door system and man-surveillance overnight services.
-        </p>
-      </div>
-      <div>
-        <h2>Trust MAR-MARINA for your boating needs</h2>
-        <p>
-          MAR-Marina takes great pride in providing exceptional facilities and
-          service. These core values are readily apparent in our full-service
-          boatyard. ALL boatyard operations are performed only by our
-          experienced personnel or trusted venders. We have the ability to haul
-          boats up to 35 tons making our marina a one-stop shop for any boater
-          needing world-class support and customer service.
-        </p>
-      </div>
-      <div>
-        <h2>At a very reasonable-competitive price</h2>
-        <p>With location and services we consider outstanding our prices are more than reasonable.</p>
-      </div>
-    </div>
-  </div>
-);
 
 export function PageShell({
   children,
@@ -67,14 +36,14 @@ export function PageShell({
 }
 
 export const homeMetadata: Metadata = {
-  title: "Mar-Marina in Tarpon Springs Florida",
+  title: "MAR-MARINA in Tarpon Springs, Florida",
   description: BASE_DESCRIPTION,
   keywords: BASE_KEYWORDS,
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Mar-Marina in Tarpon Springs Florida",
+    title: "MAR-MARINA in Tarpon Springs, Florida",
     description: BASE_DESCRIPTION,
     url: "/",
     siteName: SITE_NAME,
@@ -83,7 +52,7 @@ export const homeMetadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mar-Marina in Tarpon Springs Florida",
+    title: "MAR-MARINA in Tarpon Springs, Florida",
     description: BASE_DESCRIPTION,
     images: [OG_IMAGE],
   },
@@ -92,7 +61,7 @@ export const homeMetadata: Metadata = {
 export const reviewsMetadata: Metadata = {
   title: "MAR-MARINA Reviews",
   description:
-    "MAR-MARINA is a full service protected harbor marina located in Tarpon Springs Florida on the end of anclote river and the intracoastal waterway in western Florida.",
+    "MAR-MARINA is a full-service, protected-harbor marina in Tarpon Springs, Florida, located at the end of the Anclote River and the Gulf Intracoastal Waterway.",
   keywords: BASE_KEYWORDS,
   alternates: {
     canonical: "/wetslips.html",
@@ -100,7 +69,7 @@ export const reviewsMetadata: Metadata = {
   openGraph: {
     title: "MAR-MARINA Reviews",
     description:
-      "MAR-MARINA is a full service protected harbor marina located in Tarpon Springs Florida on the end of anclote river and the intracoastal waterway in western Florida.",
+      "MAR-MARINA is a full-service, protected-harbor marina in Tarpon Springs, Florida, located at the end of the Anclote River and the Gulf Intracoastal Waterway.",
     url: "/wetslips.html",
     siteName: SITE_NAME,
     type: "website",
@@ -110,7 +79,7 @@ export const reviewsMetadata: Metadata = {
     card: "summary_large_image",
     title: "MAR-MARINA Reviews",
     description:
-      "MAR-MARINA is a full service protected harbor marina located in Tarpon Springs Florida on the end of anclote river and the intracoastal waterway in western Florida.",
+      "MAR-MARINA is a full-service, protected-harbor marina in Tarpon Springs, Florida, located at the end of the Anclote River and the Gulf Intracoastal Waterway.",
     images: [OG_IMAGE],
   },
 };
@@ -139,14 +108,14 @@ export const servicesMetadata: Metadata = {
 };
 
 export const galleryMetadata: Metadata = {
-  title: "Boatyard-Gallery",
+  title: "MAR-MARINA Boatyard & Gallery",
   description: BASE_DESCRIPTION,
   keywords: BASE_KEYWORDS,
   alternates: {
     canonical: "/boatyardgallery.html",
   },
   openGraph: {
-    title: "Boatyard-Gallery",
+    title: "MAR-MARINA Boatyard & Gallery",
     description: BASE_DESCRIPTION,
     url: "/boatyardgallery.html",
     siteName: SITE_NAME,
@@ -155,21 +124,21 @@ export const galleryMetadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Boatyard-Gallery",
+    title: "MAR-MARINA Boatyard & Gallery",
     description: BASE_DESCRIPTION,
     images: [OG_IMAGE],
   },
 };
 
 export const contactMetadata: Metadata = {
-  title: "MAR-MARINA Location - Contact",
+  title: "MAR-MARINA Contact & Location",
   description: BASE_DESCRIPTION,
   keywords: BASE_KEYWORDS,
   alternates: {
     canonical: "/contact.html",
   },
   openGraph: {
-    title: "MAR-MARINA Location - Contact",
+    title: "MAR-MARINA Contact & Location",
     description: BASE_DESCRIPTION,
     url: "/contact.html",
     siteName: SITE_NAME,
@@ -178,7 +147,7 @@ export const contactMetadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "MAR-MARINA Location - Contact",
+    title: "MAR-MARINA Contact & Location",
     description: BASE_DESCRIPTION,
     images: [OG_IMAGE],
   },
@@ -218,7 +187,7 @@ export function HomeContent() {
         name: "Where is MAR-MARINA located?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "MAR-MARINA is located at 761 Anclote Rd., Tarpon Springs, FL 34689, at the end of the Anclote River and intracoastal waterway of the Gulf.",
+          text: "MAR-MARINA is located at 761 Anclote Rd., Tarpon Springs, FL 34689, at the end of the Anclote River and the Gulf Intracoastal Waterway.",
         },
       },
       {
@@ -309,10 +278,10 @@ export function HomeContent() {
           </div>
           <div className="home-inline-cta">
             <a href={`tel:${NAP.phoneTel}`} className="btn-hero btn-hero-primary">
-              Call {NAP.phone}
+              Call Now
             </a>
             <Link href="/contact.html" className="btn-hero btn-hero-outline btn-hero-outline--dark">
-              Get a quote
+              Request a Quote
             </Link>
           </div>
         </div>
@@ -369,15 +338,6 @@ export function HomeContent() {
         </div>
       </section>
 
-      <section className="safe-block home-safe">
-        <article className="line">
-          <h2 className="home-safe-title">Safe and close</h2>
-          <p>
-            Protected location at the end of the Anclote River—well shielded from open-water conditions. Few marinas here run two 35-ton travel lifts; we use ours daily for haul-out and service.
-          </p>
-        </article>
-      </section>
-
       <section className="home-section home-work-gallery" id="projects" aria-labelledby="home-work-heading">
         <div className="line">
           <div className="home-section-head">
@@ -414,7 +374,7 @@ export function HomeContent() {
           </div>
           <p className="home-gallery-more">
             <Link href="/boatyardgallery.html" className="btn-hero btn-hero-outline btn-hero-outline--dark">
-              View full gallery
+              View Full Gallery
             </Link>
           </p>
         </div>
@@ -447,7 +407,7 @@ export function HomeContent() {
             </blockquote>
           </div>
           <p className="home-testimonials-more">
-            <Link href="/wetslips.html">Read more reviews</Link>
+            <Link href="/wetslips.html">Read More Reviews</Link>
           </p>
         </div>
       </section>
@@ -462,7 +422,7 @@ export function HomeContent() {
           </div>
           <div className="home-cta-band-actions">
             <Link href="/contact.html#quote" className="btn-hero btn-hero-primary">
-              Get a Quote
+              Request a Quote
             </Link>
             <a href={`tel:${NAP.phoneTel}`} className="btn-hero btn-hero-outline btn-hero-outline--dark">
               Call Now
@@ -473,8 +433,10 @@ export function HomeContent() {
 
       <section className="faq-block home-faq">
         <div className="line">
-          <h2 className="section-title">Frequently asked questions</h2>
-          <p className="subtitile">Storage sizes, haul limits, security, and how to get pricing.</p>
+          <div className="home-section-head">
+            <h2 className="home-heading">Frequently asked questions</h2>
+            <p className="home-subhead">Storage sizes, haul limits, security, and how to get pricing.</p>
+          </div>
           <div className="faq-list">
             <details>
               <summary>What types of storage does MAR-MARINA offer?</summary>
@@ -512,7 +474,7 @@ export function HomeContent() {
       <section className="home-quote-section" id="quote">
         <div className="line home-quote-grid-layout">
           <div className="home-quote-copy">
-            <h2 className="home-heading">Request a quote or callback</h2>
+            <h2 className="home-heading">Request a Quote or Callback</h2>
             <p className="home-quote-lead">
               Tell us your boat length, what you need (slip, dry storage, haul-out, or repair), and when you want to start. We respond during business hours.
             </p>
@@ -528,7 +490,7 @@ export function HomeContent() {
               <a href={`mailto:${NAP.email}`}>{NAP.email}</a>
             </address>
             <a href={`tel:${NAP.phoneTel}`} className="btn-hero btn-hero-primary home-quote-call">
-              Call now
+              Call Now
             </a>
           </div>
           <div className="home-quote-form-wrap">
@@ -543,70 +505,51 @@ export function HomeContent() {
 export function ReviewsContent() {
   return (
     <>
-      <section className="content-page-head">
+      <section className="home-section reviews-page-hero">
         <div className="line">
-          <h1>REVIEWS</h1>
+          <div className="home-section-head">
+            <h1 className="home-heading">Reviews</h1>
+            <p className="home-subhead">
+              Real customer feedback and reputation widget results from boat owners who have used
+              our storage, haul-out, and yard services.
+            </p>
+          </div>
         </div>
       </section>
 
-      <section className="content-page-main">
+      <section className="home-section reviews-page-content">
         <div className="line">
-          <h2>What they say about us</h2>
-          <p>
-            <em>
-              They pulled my crab boat out so &quot;I&quot; could do the cutlass
-              bearing, I allowed myself 3 days to do the job as everyone told me
-              it would take a few days, I ended up helping a little while they
-              did the bearing, they even used their own tool and it was done in
-              one day - they saved me a ton of time and money, and their
-              experience, knowledge, and connections for parts in large boats is
-              incredible, it would have taken me a day or more just to find the
-              bearing, but as soon as it was out, the part was ready for pickup
-              within ten minutes. Thanks for the help!
-            </em>
-            <br />
-            KevinFernandez
-            <br />
-            <br />
-            Private and Secure. Best place for long term slip, storage, or out
-            of water repairs
-            <br />
-            Rudy Philippus
-            <br />
-            <br />
-            Capt Jean, Shane, and staff at Mar Marina Rock! I set up a
-            spreadsheet guesstimating what it would cost to have my boat
-            hauled/blocked and doing the work myself i.e. extensive sanding of
-            bottom, sanding of waterline stripe, changing from Sea Hawk
-            anti-fouling to Pettit Trinidad anti-fouling and re-painting the
-            waterline stripe. I met with Capt Jean and walked through my
-            spreadsheet and he indicated he could do all of the work and beat
-            the price I had come up with to do the work myself.....He was
-            right....Not only did he beat the price I had come up with to do
-            the work I listed above but, he re-faired my hull to keel joint,
-            and replaced the cutlass bearing (still under the price I had come
-            up with). Capt Jean, Shane and the crew did an amazing job prepping
-            the bottom (extensive sanding of the Sea Hawk anti-fouling) and
-            re-fairing the hull to keel joint (looks like it came out of the
-            factory). The crew at Mar Marina then painted 2 coats of Trinidad
-            (3 at the waterline) and the bottom was extremely smooth (honestly
-            felt like it had been sprayed but wasn&apos;t). I would highly recommend
-            Mar Marina for your boat yard needs. The workmanship is second to
-            none and the price point was more than reasonable. Mar Marina is now
-            my go-to boat yard. Thank you again to Mar Marina for the
-            outstanding workmanship, fair pricing, and professional advise.
-            <br />
-            Mike T
-            <br />
-            <br />
-            One of the best Marinia&apos;s I ever had pleasure dealing with. Super
-            nice, helpful staff. I had my sailboat there for a week while I put
-            a fresh coat of bottom paint on her. Couldn&apos;t have asked for a
-            better group of guys to help me when I had questions about my boat.
-            I will use them again and highly recommend them for services.
-            <br />
-            Neo Geo
-          </p>
+          <div className="home-section-head">
+            <h2 className="home-heading">What they say about us</h2>
+            <p className="home-subhead">
+              Selected quotes are lightly edited for readability while preserving each reviewer&apos;s
+              intent.
+            </p>
+          </div>
+          <div className="home-quote-grid">
+            <blockquote className="home-quote-card home-quote-card--light">
+              <p>
+                &ldquo;They pulled my crab boat out so I could do the cutlass bearing. It was done in
+                one day and saved me time and money. Their large-boat experience and parts support
+                were incredible.&rdquo;
+              </p>
+              <footer>— Kevin F.</footer>
+            </blockquote>
+            <blockquote className="home-quote-card home-quote-card--light">
+              <p>
+                &ldquo;Private and secure. Best place for long-term slip, storage, or out-of-water
+                repairs.&rdquo;
+              </p>
+              <footer>— Rudy P.</footer>
+            </blockquote>
+            <blockquote className="home-quote-card home-quote-card--light">
+              <p>
+                &ldquo;Capt. Jean, Shane, and crew did an amazing job. Workmanship was excellent and
+                pricing was more than reasonable. MAR-MARINA is now my go-to boatyard.&rdquo;
+              </p>
+              <footer>— Mike T.</footer>
+            </blockquote>
+          </div>
 
           <div className="reviews-widget-wrap">
             <Script
@@ -626,10 +569,12 @@ export function ReviewsContent() {
         </div>
       </section>
 
-      <section className="gallery">
+      <section className="home-section gallery">
         <div className="line">
-          <h2 className="section-title">MAR-MARINA gallery</h2>
-          <p className="subtitile">&nbsp;</p>
+          <div className="home-section-head">
+            <h2 className="home-heading">MAR-MARINA gallery</h2>
+            <p className="home-subhead">A quick look at our docks, basin, and facility operations.</p>
+          </div>
           <div className="gallery-grid">
             <img src="/img/first-small.jpg" alt="" />
             <img src="/img/second-small.jpg" alt="" />
@@ -639,11 +584,22 @@ export function ReviewsContent() {
         </div>
       </section>
 
-      {sharedTestimonials}
-
-      <div className="line">
-        <ConversionCTA variant="quote" />
-      </div>
+      <section className="home-cta-band" aria-label="Reviews page CTA">
+        <div className="line home-cta-band-inner">
+          <div>
+            <h2>Need a quote for your boat?</h2>
+            <p>Tell us your boat size and service timeline. We will confirm fit and availability.</p>
+          </div>
+          <div className="home-cta-band-actions">
+            <Link href="/contact.html#quote" className="btn-hero btn-hero-primary">
+              Request a Quote
+            </Link>
+            <a href={`tel:${NAP.phoneTel}`} className="btn-hero btn-hero-outline btn-hero-outline--dark">
+              Call Now
+            </a>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
@@ -667,101 +623,148 @@ export function ServicesContent() {
       <section className="home-section services-page-hero">
         <div className="line">
           <div className="home-section-head">
-            <h1 className="home-heading">Services</h1>
+            <p className="services-page-eyebrow">Tarpon Springs Marina Services</p>
+            <h1 className="home-heading">Storage, haul-out, and boatyard support in one place</h1>
             <p className="home-subhead">
-              Storage, haul-out, and marine service support in Tarpon Springs.
-              Tell us your boat size and timeline and we&apos;ll confirm fit and availability.
+              Tell us your boat length, beam, and service timeline. We will confirm fit, schedule windows,
+              and next steps without guesswork.
             </p>
+            <div className="home-inline-cta">
+              <a href={`tel:${NAP.phoneTel}`} className="btn-hero btn-hero-primary">
+                Call Now
+              </a>
+              <Link href="/contact.html#quote" className="btn-hero btn-hero-outline btn-hero-outline--dark">
+                Request a Quote
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="home-section services-page-grid">
+      <section className="home-section services-page-grid" aria-labelledby="services-grid-heading">
         <div className="line">
+          <div className="home-section-head">
+            <h2 id="services-grid-heading" className="home-heading">Service options</h2>
+            <p className="home-subhead">
+              Choose the service set that matches how you use your boat. If you are not sure, call and
+              we can guide you.
+            </p>
+          </div>
           <div className="service-cards">
             <article className="service-card">
               <span className="service-card-label">Storage</span>
-              <h2 className="service-card-title">Dry Storage</h2>
+              <h3 className="service-card-title">Dry Storage</h3>
               <p className="service-card-copy">
-                We have dry storage capabilities for boats as large as 55&apos; long x 20&apos; wide.
-                Daily, weekly, and monthly rates available. Call for pricing and availability.
+                Up to 55&apos; long x 20&apos; wide with daily, weekly, and monthly terms. Practical for
+                owners who want weather protection and fewer in-water maintenance demands.
               </p>
             </article>
             <article className="service-card">
               <span className="service-card-label">Storage</span>
-              <h2 className="service-card-title">Wet Slips</h2>
+              <h3 className="service-card-title">Wet Slips</h3>
               <p className="service-card-copy">
-                Our wet slips can accommodate boats up to 75&apos; long x 20&apos; wide with a 7&apos; draft.
-                Featuring new docks, new plumbing, and new power: 30, 50, and 100 amp.
+                Up to 75&apos; long x 20&apos; wide, 7&apos; draft, with new docks/plumbing and 30/50/100 amp
+                power for owners who want dock-and-go access.
               </p>
             </article>
             <article className="service-card">
-              <span className="service-card-label">Security</span>
-              <h2 className="service-card-title">Secure Marina Access</h2>
+              <span className="service-card-label">Haul-Out</span>
+              <h3 className="service-card-title">Travel Lift Service</h3>
               <p className="service-card-copy">
-                This is a secure marina with a locked gate and 24 hour on-site security.
-                We also use remote control main-door access and overnight surveillance.
+                Two 35-ton marine travel lifts for haul, block, yard work, and launch. Keep scheduling
+                and execution with one coordinated marina team.
               </p>
             </article>
             <article className="service-card">
               <span className="service-card-label">Amenities</span>
-              <h2 className="service-card-title">On-site Amenities</h2>
+              <h3 className="service-card-title">On-site Amenities</h3>
               <p className="service-card-copy">
-                Picnic area / BBQ, dog walk, clean restrooms / showers,
-                fish cleaning station, and pumpout portable station.
+                Picnic and BBQ area, dog walk, clean restrooms/showers, fish cleaning station, and
+                pumpout support for day-to-day marina convenience.
               </p>
             </article>
             <article className="service-card">
               <span className="service-card-label">Boatyard</span>
-              <h2 className="service-card-title">Repairs, Waxing &amp; Buffing</h2>
+              <h3 className="service-card-title">Repairs, Waxing &amp; Buffing</h3>
               <p className="service-card-copy">
-                With an extensive crew of mechanics, detailing, and painting professionals,
-                we can handle jobs large or small in a timely fashion. We also restore faded gelcoat.
+                On-site mechanics, detailing, painting, and gelcoat restoration. Work is handled by our
+                crew or trusted vendors for accountable delivery.
               </p>
             </article>
             <article className="service-card service-card--accent">
               <span className="service-card-label">Rack Storage</span>
-              <h2 className="service-card-title">Boats up to 28&apos;</h2>
+              <h3 className="service-card-title">Boats up to 28&apos;</h3>
               <p className="service-card-copy">
-                We offer rack storage for boats up to 28&apos; with forklift in-out service.
-                A practical option for owners who want secure, dry storage access.
+                Forklift in-out rack storage for boats up to 28&apos;; ideal for owners who want faster
+                dry storage handling and controlled access.
               </p>
             </article>
           </div>
-          <div className="home-inline-cta">
-            <a href={`tel:${NAP.phoneTel}`} className="btn-hero btn-hero-primary">
-              Call {NAP.phone}
-            </a>
-            <Link href="/contact.html#quote" className="btn-hero btn-hero-outline btn-hero-outline--dark">
-              Get a quote
-            </Link>
-          </div>
         </div>
       </section>
 
-      <section className="home-cta-band" aria-label="Service quote call-to-action">
-        <div className="line home-cta-band-inner">
-          <div>
-            <h2>Need storage, haul-out, or service this week?</h2>
-            <p>
-              Call us with your boat length and service request. We will confirm capacity and timing.
+      <section className="home-section services-why" aria-labelledby="services-why-heading">
+        <div className="line">
+          <div className="home-section-head">
+            <h2 id="services-why-heading" className="home-heading">Why choose MAR-MARINA</h2>
+            <p className="home-subhead">
+              We are built for owners who want dependable yard execution, secure storage, and straight answers.
             </p>
           </div>
-          <div className="home-cta-band-actions">
-            <Link href="/contact.html#quote" className="btn-hero btn-hero-primary">
-              Get a Quote
-            </Link>
-            <a href={`tel:${NAP.phoneTel}`} className="btn-hero btn-hero-outline btn-hero-outline--dark">
-              Call Now
-            </a>
+          <div className="why-grid">
+            <article className="why-card">
+              <h3>Protected location</h3>
+              <p>End-of-river setting in Tarpon Springs for reduced open-water exposure during typical conditions.</p>
+            </article>
+            <article className="why-card">
+              <h3>Lift capacity and crew</h3>
+              <p>Two 35-ton travel lifts and experienced on-site teams keep projects coordinated and moving.</p>
+            </article>
+            <article className="why-card">
+              <h3>Security and oversight</h3>
+              <p>Locked access, overnight surveillance, and 24-hour on-site security support for peace of mind.</p>
+            </article>
           </div>
         </div>
       </section>
 
-      <section className="gallery home-section">
+      <section className="home-section services-process" aria-labelledby="services-process-heading">
         <div className="line">
-          <h2 className="section-title">STORAGE - REPAIR FACILITY</h2>
-          <p className="subtitile">&nbsp;</p>
+          <div className="home-section-head">
+            <h2 id="services-process-heading" className="home-heading">How service planning works</h2>
+            <p className="home-subhead">Simple process to confirm fit and schedule without back-and-forth confusion.</p>
+          </div>
+          <div className="services-process-grid">
+            <article className="services-step-card">
+              <span className="services-step-num">01</span>
+              <h3>Share boat details</h3>
+              <p>Send length, beam, service need, and target dates by phone or form.</p>
+            </article>
+            <article className="services-step-card">
+              <span className="services-step-num">02</span>
+              <h3>Confirm fit and timing</h3>
+              <p>We verify capacity and current scheduling windows for your request.</p>
+            </article>
+            <article className="services-step-card">
+              <span className="services-step-num">03</span>
+              <h3>Book with clear next steps</h3>
+              <p>You get a straightforward plan for arrival, handling, and execution.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="gallery home-section services-proof" aria-labelledby="services-proof-heading">
+        <div className="line">
+          <div className="home-section-head">
+            <h2 id="services-proof-heading" className="home-heading">Facility proof and capability</h2>
+            <p className="home-subhead">Snapshots of active storage and boatyard operations at MAR-MARINA.</p>
+          </div>
+          <div className="services-proof-strip" aria-label="Key service proof points">
+            <p><strong>{TRUST_FACTS.yearsExperience}</strong> years local service</p>
+            <p><strong>{TRUST_FACTS.travelLifts}</strong> travel lifts</p>
+            <p><strong>{TRUST_FACTS.travelLiftCapacityTons} tons</strong> max haul capacity</p>
+          </div>
           <div className="gallery-grid">
             <img src="/img/first-small.jpg" alt="" />
             <img src="/img/second-small.jpg" alt="" />
@@ -771,11 +774,11 @@ export function ServicesContent() {
         </div>
       </section>
 
-      {sharedTestimonials}
-
       <section className="faq-block home-section">
         <div className="line">
-          <h2 className="section-title">Frequently asked questions about our services</h2>
+          <div className="home-section-head">
+            <h2 className="home-heading">Frequently asked questions about our services</h2>
+          </div>
           <div className="faq-list">
             <details>
               <summary>Do you offer dry storage in Tarpon Springs?</summary>
@@ -795,7 +798,7 @@ export function ServicesContent() {
             </details>
             <details>
               <summary>How do I request pricing?</summary>
-              <p>Call us at <a href={`tel:${NAP.phoneTel}`}>{NAP.phone}</a> or <a href="mailto:info@mar-marina.com">email</a> for current pricing and availability. You can also <Link href="/contact.html">send a message</Link> or read our <Link href="/guides/boat-storage-pricing-tarpon-springs">boat storage pricing guide</Link> for what affects cost.</p>
+              <p>Call us at <a href={`tel:${NAP.phoneTel}`}>{NAP.phone}</a> or <a href="mailto:info@mar-marina.com">email us</a> for current pricing and availability. You can also <Link href="/contact.html">send a message</Link> or read our <Link href="/guides/boat-storage-pricing-tarpon-springs">boat storage pricing guide</Link> for what affects cost.</p>
             </details>
           </div>
           <p className="authority-links" style={{ marginTop: "16px" }}>
@@ -803,14 +806,30 @@ export function ServicesContent() {
             {" · "}
             <Link href="/guides/boat-storage-pricing-tarpon-springs">Pricing guide</Link>
             {" · "}
-            <Link href="/contact.html">Request a quote</Link>
+            <Link href="/contact.html">Request a Quote</Link>
           </p>
         </div>
       </section>
 
-      <div className="line">
-        <ConversionCTA variant="quote" />
-      </div>
+      <section className="home-cta-band" aria-label="Service quote call-to-action">
+        <div className="line home-cta-band-inner">
+          <div>
+            <h2>Need storage, haul-out, or service this week?</h2>
+            <p>
+              Call us with your boat length and service request. We will confirm capacity and timing.
+            </p>
+          </div>
+          <div className="home-cta-band-actions">
+            <Link href="/contact.html#quote" className="btn-hero btn-hero-primary">
+              Request a Quote
+            </Link>
+            <a href={`tel:${NAP.phoneTel}`} className="btn-hero btn-hero-outline btn-hero-outline--dark">
+              Call Now
+            </a>
+          </div>
+        </div>
+      </section>
+
     </>
   );
 }
@@ -818,19 +837,19 @@ export function ServicesContent() {
 export function GalleryContent() {
   return (
     <>
-      <section className="content-page-head">
+      <section className="home-section gallery-page-hero">
         <div className="line">
-          <h1>BOATYARD &amp; PHOTO GALLERY</h1>
-          <p className="subtitile">
-            Great location well protected from storms offering
-            <br />
-            unique priority to our clients as one of the a few marina&apos;s in the
-            area with two 35 ton MARINE TRAVEL LIFTS.
-          </p>
+          <div className="home-section-head">
+            <h1 className="home-heading">Boatyard &amp; Photo Gallery</h1>
+            <p className="home-subhead">
+              Protected location in Tarpon Springs with two 35-ton marine travel lifts and on-site
+              crew support for haul-out and service work.
+            </p>
+          </div>
         </div>
       </section>
 
-      <section className="content-page-main">
+      <section className="home-section gallery-page-grid">
         <div className="line gallery-grid">
           <img src="/img/11.jpg" alt="" />
           <img src="/img/6.jpg" alt="" />
@@ -847,39 +866,22 @@ export function GalleryContent() {
         </div>
       </section>
 
-      <div className="testimonial-block">
-        <div className="line testimonial-items">
+      <section className="home-cta-band" aria-label="Gallery page CTA">
+        <div className="line home-cta-band-inner">
           <div>
-            <h2>For your piece of mind</h2>
-            <p>
-              Boat security is very important to all boat owners who trust their
-              property to a marina either on a slip or dry-storage. At
-              MAR-MARINA we take pride in our 24/7 security systems with our
-              remote control main door system and man-surveillance overnight
-              services.
-            </p>
+            <h2>Planning yard work or haul-out?</h2>
+            <p>Call with your boat specs and target dates. We can confirm schedule options.</p>
           </div>
-          <div>
-            <h2>Trust MAR-MARINA for your boating needs</h2>
-            <p>
-              MAR-Marina takes great pride in providing exceptional facilities
-              and service. These core values are readily apparent in our
-              full-service boatyard. ALL boatyard operations are performed only
-              by our experienced personnel or trusted venders. We have the
-              ability to haul boats up to 35 tons making our marina a one-stop
-              shop for any boater needing world-class support and customer
-              service.
-            </p>
-          </div>
-          <div>
-            <h2>At a very reasonable-competitive price</h2>
-            <p>With location and services we consider outstanding our prices are more than reasonable.</p>
+          <div className="home-cta-band-actions">
+            <Link href="/contact.html#quote" className="btn-hero btn-hero-primary">
+              Request a Quote
+            </Link>
+            <a href={`tel:${NAP.phoneTel}`} className="btn-hero btn-hero-outline btn-hero-outline--dark">
+              Call Now
+            </a>
           </div>
         </div>
-      </div>
-      <div className="line">
-        <ConversionCTA variant="quote" />
-      </div>
+      </section>
     </>
   );
 }
@@ -890,11 +892,59 @@ export function ContactContent() {
       <section className="home-section contact-page-hero">
         <div className="line">
           <div className="home-section-head">
-            <h1 className="home-heading">Location / Contact</h1>
+            <p className="contact-page-eyebrow">Tarpon Springs Marina Contact</p>
+            <h1 className="home-heading">Get storage, haul-out, or service help for your boat</h1>
             <p className="home-subhead">
-              Speak with the marina directly about wet slips, dry storage, haul-out, and service work.
-              We&apos;ll confirm fit, timing, and next steps.
+              Speak directly with our team about wet slips, dry storage, haul-out, and repairs.
+              We will confirm fit, schedule options, and clear next steps.
             </p>
+            <div className="home-inline-cta">
+              <a href={`tel:${NAP.phoneTel}`} className="btn-hero btn-hero-primary">
+                Call Now
+              </a>
+              <Link href="/contact.html#quote" className="btn-hero btn-hero-outline btn-hero-outline--dark">
+                Request a Quote
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="home-section contact-options-section" aria-labelledby="contact-options-heading">
+        <div className="line">
+          <div className="home-section-head">
+            <h2 id="contact-options-heading" className="home-heading">Choose how you want to contact us</h2>
+            <p className="home-subhead">
+              Fastest path is to call with your boat size and service need. Email and map directions are below.
+            </p>
+          </div>
+          <div className="contact-options-grid">
+            <article className="contact-option-card">
+              <h3>Call</h3>
+              <p>Talk directly with the marina team for availability and scheduling.</p>
+              <a className="quick-action" href={`tel:${NAP.phoneTel}`}>Call Now</a>
+            </article>
+            <article className="contact-option-card">
+              <h3>Email</h3>
+              <p>Send your vessel details and requested services for a written follow-up.</p>
+              <a className="quick-action" href={`mailto:${NAP.email}`}>{NAP.email}</a>
+            </article>
+            <article className="contact-option-card">
+              <h3>Visit</h3>
+              <p>
+                {NAP.street}
+                <br />
+                {NAP.city}, {NAP.region} {NAP.postalCode}
+              </p>
+              <a
+                className="quick-action"
+                href="https://www.google.com/maps/search/?api=1&query=761+Anclote+Rd+Tarpon+Springs+FL+34689"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open in Maps
+              </a>
+            </article>
           </div>
         </div>
       </section>
@@ -905,48 +955,66 @@ export function ContactContent() {
             <article className="contact-info-card">
               <h2>MAR-MARINA</h2>
               <address>
-                761 Anclote Road or by Google maps (761 Flaherty Road)
+                {NAP.street} (Google Maps may show 761 Flaherty Road)
                 <br />
-                Tarpon Springs, FL 34689
-                <br />
-                <a href="tel:+17279391589">(727) 939-1589</a>
-                <br />
-                email: <a href="mailto:info@mar-marina.com">info@mar-marina.com</a>
+                {NAP.city}, {NAP.region} {NAP.postalCode}
               </address>
+              <p className="contact-hours-block">
+                <strong>Hours</strong>
+                <br />
+                {HOURS.office}
+                <br />
+                {HOURS.yard}
+              </p>
+              <p className="contact-service-area">
+                <strong>Service Area</strong>
+                <br />
+                Tarpon Springs and surrounding Gulf Coast boating communities.
+              </p>
               <p className="quick-actions">
-                <a className="quick-action" href="tel:+17279391589">
-                  Call Marina
+                <a className="quick-action" href={`tel:${NAP.phoneTel}`}>
+                  Call Now
                 </a>
-                <a className="quick-action" href="mailto:info@mar-marina.com">
-                  Email Marina
+                <a className="quick-action" href={`mailto:${NAP.email}`}>
+                  Email Us
                 </a>
               </p>
             </article>
 
-            <article className="contact-info-card">
-              <h2>Service Area</h2>
-              <p>Tarpon Springs and surrounding Gulf Coast boating communities.</p>
-              <h2>Social Media</h2>
-              <p>
+            <article className="contact-info-card contact-support-card">
+              <h2>What happens next</h2>
+              <ul>
+                <li>We review vessel length, beam, and requested service.</li>
+                <li>We confirm fit and current schedule windows.</li>
+                <li>We provide clear next steps and booking guidance.</li>
+              </ul>
+              <p className="contact-social-link">
+                Follow updates on{" "}
                 <a
-                  href="https://www.facebook.com/MarMarina1234/?skip_nax_wizard=true"
+                  href="https://www.facebook.com/MarMarina1234/?utm_source=chatgpt.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  facebook
+                  Facebook
                 </a>
+                .
               </p>
             </article>
           </aside>
 
           <div id="quote" className="contact-form-panel">
-            <h2>Your request here about your boat</h2>
+            <p className="contact-form-kicker">Request Form</p>
+            <h2>Request a Quote or Callback</h2>
             <p className="contact-form-intro">
-              Include your vessel length, storage or service need, and target dates.
-              We respond during business hours.
+              Include boat length, service needed, and target dates. We respond during business hours
+              with availability and next steps.
             </p>
+            <ul className="contact-form-checklist" aria-label="Helpful details to include">
+              <li>Boat length and type</li>
+              <li>Storage, haul-out, or repair request</li>
+              <li>Preferred start window</li>
+            </ul>
             <ContactForm />
-            <ConversionCTA variant="contact" className="cta-after-form" />
           </div>
         </div>
       </section>
@@ -968,51 +1036,53 @@ export function ContactContent() {
         </div>
       </section>
 
-      <section className="map-embed home-section">
-        <div className="line map-card">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3517.4175021949045!2d-82.77631108440873!3d28.164215682604798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c28dac4a982a73%3A0x7f336f0742a01e7f!2s761+Flaherty+Rd%2C+Tarpon+Springs%2C+FL+34689!5e0!3m2!1sen!2sus!4v1461526898761"
-            width="100%"
-            height="450"
-            frameBorder="0"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            allowFullScreen
-            title="Mar-Marina map"
-          />
+      <section className="home-section contact-location-section" aria-labelledby="contact-location-heading">
+        <div className="line">
+          <div className="home-section-head">
+            <h2 id="contact-location-heading" className="home-heading">Location and access</h2>
+            <p className="home-subhead">
+              Located at the end of the Anclote River in Tarpon Springs, with access to intracoastal
+              and Gulf routes.
+            </p>
+          </div>
+          <div className="map-card">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3517.4175021949045!2d-82.77631108440873!3d28.164215682604798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c28dac4a982a73%3A0x7f336f0742a01e7f!2s761+Flaherty+Rd%2C+Tarpon+Springs%2C+FL+34689!5e0!3m2!1sen!2sus!4v1461526898761"
+              width="100%"
+              height="450"
+              frameBorder="0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+              title="MAR-MARINA map"
+            />
+          </div>
         </div>
       </section>
 
-      <div className="testimonial-block">
-        <div className="line testimonial-items">
-          <div>
-            <h2>For your piece of mind</h2>
-            <p>
-              Boat security is very important to all boat owners who trust their
-              property to a marina either on a slip or dry-storage. At
-              MAR-MARINA we take pride in our 24/7 security systems with our
-              remote control main door system and man-surveillance overnight
-              services.
-            </p>
+      <section className="home-section contact-support-messaging" aria-labelledby="contact-support-heading">
+        <div className="line">
+          <div className="home-section-head">
+            <h2 id="contact-support-heading" className="home-heading">Support you can count on</h2>
+            <p className="home-subhead">{SUMMARY_ONE_LINE}</p>
           </div>
-          <div>
-            <h2>Trust MAR-MARINA for your boating needs</h2>
-            <p>
-              MAR-Marina takes great pride in providing exceptional facilities
-              and service. These core values are readily apparent in our
-              full-service boatyard. ALL boatyard operations are performed only
-              by our experienced personnel or trusted venders. We have the
-              ability to haul boats up to 35 tons making our marina a one-stop
-              shop for any boater needing world-class support and customer
-              service.
-            </p>
-          </div>
-          <div>
-            <h2>At a very reasonable-competitive price</h2>
-            <p>With location and services we consider outstanding our prices are more than reasonable.</p>
+          <div className="why-grid">
+            <article className="why-card">
+              <h3>Clear communication</h3>
+              <p>No call-center handoff. You speak with the marina team that handles scheduling.</p>
+            </article>
+            <article className="why-card">
+              <h3>Practical guidance</h3>
+              <p>We help you choose the right path based on your vessel, timeline, and service needs.</p>
+            </article>
+            <article className="why-card">
+              <h3>Local experience</h3>
+              <p>Serving Tarpon Springs boat owners for over {TRUST_FACTS.yearsExperience} years.</p>
+            </article>
           </div>
         </div>
-      </div>
+      </section>
+
     </>
   );
 }

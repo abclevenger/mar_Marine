@@ -12,9 +12,9 @@ type NavLink = {
 const NAV_LINKS: NavLink[] = [
   { href: "/index.html", label: "Home" },
   { href: "/drystorage.html", label: "Services" },
-  { href: "/#why-choose-us", label: "Why Choose Us" },
-  { href: "/#projects", label: "Projects" },
-  { href: "/#testimonials", label: "Testimonials" },
+  { href: "/wetslips.html", label: "Reviews" },
+  { href: "/boatyardgallery.html", label: "Gallery" },
+  { href: "/#why-choose-us", label: "Why Us" },
   { href: "/contact.html", label: "Contact" },
 ];
 
@@ -29,6 +29,7 @@ export function SiteHeaderNav({ currentPath }: { currentPath: string }) {
   const [scrolled, setScrolled] = useState(false);
   const [activeHomeSection, setActiveHomeSection] = useState<string>("");
   const isHomeRoute = currentPath === "/" || currentPath === "/index.html";
+  const primarySectionLink = "why-choose-us";
 
   useEffect(() => {
     const onScroll = () => {
@@ -59,6 +60,10 @@ export function SiteHeaderNav({ currentPath }: { currentPath: string }) {
   }, [menuOpen]);
 
   useEffect(() => {
+    setMenuOpen(false);
+  }, [currentPath]);
+
+  useEffect(() => {
     const closeMenu = () => setMenuOpen(false);
     const onResize = () => {
       if (window.innerWidth > 1060) closeMenu();
@@ -78,6 +83,14 @@ export function SiteHeaderNav({ currentPath }: { currentPath: string }) {
     if (!isHomeRoute) return;
 
     const sectionAnchors = ["why-choose-us", "projects", "testimonials"];
+    const updateFromHash = () => {
+      const id = window.location.hash.replace("#", "");
+      if (sectionAnchors.includes(id)) {
+        setActiveHomeSection(id);
+      } else if (!window.location.hash) {
+        setActiveHomeSection("");
+      }
+    };
     const targets = sectionAnchors
       .map((id) => document.getElementById(id))
       .filter((node): node is HTMLElement => Boolean(node));
@@ -102,13 +115,18 @@ export function SiteHeaderNav({ currentPath }: { currentPath: string }) {
     );
 
     targets.forEach((el) => observer.observe(el));
+    updateFromHash();
+    window.addEventListener("hashchange", updateFromHash);
 
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("hashchange", updateFromHash);
+    };
   }, [isHomeRoute]);
 
   const isNavItemActive = (href: string): boolean => {
     if (href === "/index.html" || href === "/") {
-      return isHomeRoute && !activeHomeSection;
+      return isHomeRoute && activeHomeSection !== primarySectionLink;
     }
 
     if (href.startsWith("/#")) {
@@ -118,6 +136,11 @@ export function SiteHeaderNav({ currentPath }: { currentPath: string }) {
     }
 
     return isActive(currentPath, href);
+  };
+
+  const navAriaCurrent = (href: string): "page" | "location" | undefined => {
+    if (!isNavItemActive(href)) return undefined;
+    return href.startsWith("/#") ? "location" : "page";
   };
 
   const headerClass = useMemo(
@@ -140,7 +163,7 @@ export function SiteHeaderNav({ currentPath }: { currentPath: string }) {
                 <Link
                   href={item.href}
                   className={isNavItemActive(item.href) ? "active" : undefined}
-                  aria-current={isNavItemActive(item.href) ? "page" : undefined}
+                  aria-current={navAriaCurrent(item.href)}
                 >
                   {item.label}
                 </Link>
@@ -154,7 +177,7 @@ export function SiteHeaderNav({ currentPath }: { currentPath: string }) {
             Call Now
           </a>
           <Link href="/contact.html#quote" className="nav-quote">
-            Get a Quote
+            Request a Quote
           </Link>
         </div>
 
@@ -181,11 +204,27 @@ export function SiteHeaderNav({ currentPath }: { currentPath: string }) {
             onClick={() => setMenuOpen(false)}
           />
           <div id="mobile-menu-panel" className="mobile-menu-panel">
+            <div className="mobile-menu-top">
+              <p className="mobile-menu-title">Navigation</p>
+              <button
+                type="button"
+                className="mobile-menu-close"
+                aria-label="Close mobile menu"
+                onClick={() => setMenuOpen(false)}
+              >
+                X
+              </button>
+            </div>
             <nav aria-label="Mobile primary">
               <ul>
                 {NAV_LINKS.map((item) => (
                   <li key={item.href}>
-                    <Link href={item.href} onClick={() => setMenuOpen(false)}>
+                    <Link
+                      href={item.href}
+                      className={isNavItemActive(item.href) ? "active" : undefined}
+                      aria-current={navAriaCurrent(item.href)}
+                      onClick={() => setMenuOpen(false)}
+                    >
                       {item.label}
                     </Link>
                   </li>
@@ -194,10 +233,10 @@ export function SiteHeaderNav({ currentPath }: { currentPath: string }) {
             </nav>
             <div className="mobile-menu-actions">
               <a href={`tel:${NAP.phoneTel}`} onClick={() => setMenuOpen(false)}>
-                Call {NAP.phone}
+                Call Now
               </a>
               <Link href="/contact.html#quote" onClick={() => setMenuOpen(false)}>
-                Get a Quote
+                Request a Quote
               </Link>
             </div>
           </div>

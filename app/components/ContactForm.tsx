@@ -126,7 +126,7 @@ export function ContactForm() {
             aria-describedby="sms-consent-transactional-text"
           />
           <label htmlFor="sms_consent_transactional" id="sms-consent-transactional-text">
-            I agree to receive non-marketing text messages from Mar Marina related to my inquiry,
+            I agree to receive non-marketing text messages from MAR-MARINA related to my inquiry,
             service request, or appointment. Message frequency may vary. Message and data rates may
             apply. Text HELP for assistance. Reply STOP to opt out at any time.
           </label>
@@ -140,7 +140,7 @@ export function ContactForm() {
             aria-describedby="sms-consent-marketing-text"
           />
           <label htmlFor="sms_consent_marketing" id="sms-consent-marketing-text">
-            I agree to receive marketing and promotional text messages from Mar Marina at the number
+            I agree to receive marketing and promotional text messages from MAR-MARINA at the number
             provided. Message frequency may vary. Message and data rates may apply. Text HELP for
             assistance. Reply STOP to opt out at any time.
           </label>

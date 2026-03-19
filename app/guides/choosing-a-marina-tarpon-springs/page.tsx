@@ -39,7 +39,7 @@ export default function ChoosingAMarinaTarponSpringsPage() {
 
         <p className="guide-cta">
           <Link href="/contact.html" className="quick-action">
-            Request a quote
+            Request a Quote
           </Link>
         </p>
       </article>

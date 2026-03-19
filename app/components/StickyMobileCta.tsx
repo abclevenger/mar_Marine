@@ -10,7 +10,7 @@ export function StickyMobileCta() {
         Call Now
       </a>
       <Link href="/contact.html#quote" className="sticky-mobile-cta-quote">
-        Get a Quote
+        Request a Quote
       </Link>
     </div>
   );

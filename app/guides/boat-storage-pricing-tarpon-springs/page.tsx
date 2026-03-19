@@ -6,7 +6,7 @@ import { NAP } from "../../lib/business";
 export const metadata: Metadata = {
   title: "Boat Storage Pricing Guide – Tarpon Springs | MAR-MARINA",
   description:
-    "What affects boat storage cost in Tarpon Springs: wet vs dry, size, season, access, and service level. Request a quote for your boat.",
+    "What affects boat storage cost in Tarpon Springs: wet vs dry, size, season, access, and service level. Request a Quote for your boat.",
   alternates: { canonical: "/guides/boat-storage-pricing-tarpon-springs" },
 };
 
@@ -38,7 +38,7 @@ export default function BoatStoragePricingGuidePage() {
         </section>
 
         <section>
-          <h2>Request a quote</h2>
+          <h2>Request a Quote</h2>
           <p>
             We do not publish exact prices online because they depend on your boat size, storage type, and term. For current <strong>wet slip</strong> and <strong>dry storage</strong> pricing and availability in Tarpon Springs, call <a href={`tel:${NAP.phoneTel}`}>{NAP.phone}</a> or <a href={`mailto:${NAP.email}`}>email us</a>. We can give you a clear quote for your situation.
           </p>
@@ -46,7 +46,7 @@ export default function BoatStoragePricingGuidePage() {
 
         <p className="guide-cta">
           <Link href="/contact.html" className="quick-action">
-            Request a quote
+            Request a Quote
           </Link>
         </p>
       </article>

@@ -20,10 +20,10 @@ export function HomeHero() {
             </p>
             <div className="home-hero-cta-row">
               <a href={`tel:${NAP.phoneTel}`} className="btn-hero btn-hero-primary">
-                Call {NAP.phone}
+                Call Now
               </a>
               <Link href="/contact.html" className="btn-hero btn-hero-outline">
-                Request a quote
+                Request a Quote
               </Link>
             </div>
             <ul className="home-hero-trust" aria-label="Trust highlights">

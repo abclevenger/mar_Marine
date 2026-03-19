@@ -49,13 +49,13 @@ export default function DryStorageVsWetSlipsPage() {
         <section>
           <h2>Who each option is best for</h2>
           <p>
-            Wet slips suit regular boaters who want quick access and are okay with in-water maintenance. Dry storage suits seasonal users, those who want to limit exposure to weather and fouling, and anyone who wants a clear storm-season option. At MAR-MARINA we offer both <Link href="/drystorage.html">wet slips</Link> and <Link href="/drystorage.html">dry storage</Link> in Tarpon Springs, including rack storage for boats up to 28&apos; and dry storage for boats up to 55&apos; x 20&apos;. <Link href="/contact.html">Contact us</Link> to discuss which fits your boat and use.
+            Wet slips suit regular boaters who want quick access and are okay with in-water maintenance. Dry storage suits seasonal users, those who want to limit exposure to weather and fouling, and anyone who wants a clear storm-season option. At MAR-MARINA we offer both <Link href="/drystorage.html">wet slips</Link> and <Link href="/drystorage.html">dry storage</Link> in Tarpon Springs, including rack storage for boats up to 28&apos; and dry storage for boats up to 55&apos; x 20&apos;. <Link href="/contact.html">Contact Us</Link> to discuss which fits your boat and use.
           </p>
         </section>
 
         <p className="guide-cta">
           <Link href="/contact.html" className="quick-action">
-            Get in touch
+            Request a Quote
           </Link>
         </p>
       </article>

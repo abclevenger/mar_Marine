@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
+import Script from "next/script";
 import { GlobalFooter } from "./components/GlobalFooter";
 import { StickyMobileCta } from "./components/StickyMobileCta";
 import { NAP, AREA_SERVED, SERVICES_EXPLICIT, SITE_URL } from "./lib/business";
@@ -14,19 +15,19 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://mar-marina.org"),
   applicationName: "MAR-MARINA",
-  title: "Mar-Marina in Tarpon Springs Florida",
+  title: "MAR-MARINA in Tarpon Springs, Florida",
   description:
-    "Mar-Marina is a full service protected harbor marina located at the end of Anclote River and intracoastal waterway of the Gulf in Tarpon Springs Florida.",
+    "MAR-MARINA is a full-service, protected-harbor marina located at the end of the Anclote River and the Gulf Intracoastal Waterway in Tarpon Springs, Florida.",
   keywords:
-    "Tarpon Springs, Florida, marina, full service, intracoastal waterway, protected harbor, Gulf, anclote river, dry dock, wet slips, boat yard",
+    "Tarpon Springs, Florida, marina, full service, intracoastal waterway, protected harbor, Gulf, Anclote River, dry dock, wet slips, boat yard",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://mar-marina.org/",
     siteName: "MAR-MARINA",
-    title: "Mar-Marina in Tarpon Springs Florida",
+    title: "MAR-MARINA in Tarpon Springs, Florida",
     description:
-      "Mar-Marina is a full service protected harbor marina located at the end of Anclote River and intracoastal waterway of the Gulf in Tarpon Springs Florida.",
+      "MAR-MARINA is a full-service, protected-harbor marina located at the end of the Anclote River and the Gulf Intracoastal Waterway in Tarpon Springs, Florida.",
     images: [
       {
         url: "/img/first.jpg",
@@ -36,9 +37,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mar-Marina in Tarpon Springs Florida",
+    title: "MAR-MARINA in Tarpon Springs, Florida",
     description:
-      "Mar-Marina is a full service protected harbor marina located at the end of Anclote River and intracoastal waterway of the Gulf in Tarpon Springs Florida.",
+      "MAR-MARINA is a full-service, protected-harbor marina located at the end of the Anclote River and the Gulf Intracoastal Waterway in Tarpon Springs, Florida.",
     images: ["/img/first.jpg"],
   },
   robots: {
@@ -98,6 +99,13 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <Script
+          id="leadconnector-chat-widget"
+          src="https://widgets.leadconnectorhq.com/loader.js"
+          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+          data-widget-id="69bc367f8e4a64b1b4286163"
+          strategy="afterInteractive"
         />
         <div className="layout-wrap">
           <div className="layout-main">{children}</div>
