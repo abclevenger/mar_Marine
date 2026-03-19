@@ -411,7 +411,7 @@ export function HomeContent() {
             </article>
             <div className="map-card">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3517.4253864443795!2d-82.77759962332641!3d28.16397580520169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c28db253889fd5%3A0xe984d805d17c05a4!2sMar%20Marina!5e0!3m2!1sen!2sus!4v1773948690243!5m2!1sen!2sus"
+                src="https://maps.google.com/maps?q=761%20Anclote%20Rd%20Tarpon%20Springs%20FL%2034689&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="360"
                 frameBorder="0"
@@ -420,6 +420,15 @@ export function HomeContent() {
                 allowFullScreen
                 title="Mar Marina location map"
               />
+              <p className="map-fallback-link">
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=761+Anclote+Rd+Tarpon+Springs+FL+34689"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Open Map
+                </a>
+              </p>
             </div>
           </div>
         </div>
@@ -1038,7 +1047,7 @@ export function ContactContent() {
           </div>
           <div className="map-card">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3517.4253864443795!2d-82.77759962332641!3d28.16397580520169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c28db253889fd5%3A0xe984d805d17c05a4!2sMar%20Marina!5e0!3m2!1sen!2sus!4v1773948690243!5m2!1sen!2sus"
+              src="https://maps.google.com/maps?q=761%20Anclote%20Rd%20Tarpon%20Springs%20FL%2034689&t=&z=15&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="450"
               frameBorder="0"
@@ -1047,6 +1056,15 @@ export function ContactContent() {
               allowFullScreen
               title="Mar Marina map"
             />
+            <p className="map-fallback-link">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=761+Anclote+Rd+Tarpon+Springs+FL+34689"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open Map
+              </a>
+            </p>
           </div>
         </div>
       </section>
